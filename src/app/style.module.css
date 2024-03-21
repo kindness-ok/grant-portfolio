@@ -1,0 +1,12 @@
+.homeSection {
+  padding-top: 80px;
+  background-color:  #7e22ce;
+  height: 100vh;
+}
+
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+}
