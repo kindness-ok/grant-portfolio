@@ -8,12 +8,14 @@ import MobileNav from '../components/mobilenav';
 import DesktopNav from '../components/desktopNav';
 import Man from '../../public/man.png';
 import Clothone from '../../public/clothone.jpg';
-import { FaEnvelope } from "react-icons/fa";
+import { RxEnvelopeClosed } from "react-icons/rx";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
+import { GiGreenhouse } from "react-icons/gi";
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from "embla-carousel-autoplay";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import Grant from "../../public/grant.jpg";
+import { FcGlobe } from "react-icons/fc";
 import GrantSews from "../../public/grant-sews.png";
 import Sweing from '../../public/sweing1.png';
 import styles from './style.module.css';
@@ -151,34 +153,30 @@ export default function Home() {
             </h2>
           </div>
           <div className="w-full grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5 h-full my-10">
-            <div className="md:col-span-2 flex flex-col px-5 border-4 border-red-800 relative cursor-pointer">
+            <div className="md:col-span-2 flex flex-col pl-8 border-4 border-red-800 relative cursor-pointer">
               <div className="my-1">
                 <h2 className="text-black text-xl md:text-2xl font-mono font-bold ">Gwawoh Grant</h2>
               </div>
               <div className="">
-                <p>
+                <p className="text-gray-500 font-medium font-mono">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                   Suspendisse varius enim in eros elementum tristique.
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                   Suspendisse varius enim in eros elementum tristique.
                 </p>
               </div>
-              <div className="flex flex-col w-full my-2 gap-4">
-                <div className="flex flex-row gap-3 items-center bg-slate-300">
-                  <FaEnvelope className="text-purple-700 text-2xl" />
-                  <p>johndoe@gmail.com</p>
+              <div className="flex flex-col w-full my-2 gap-1">
+                <div className="flex flex-row gap-3 items-center">
+                  <RxEnvelopeClosed className="text-purple-700 text-2xl" />
+                  <p className="text-xs font-mono font-bold ">johndoe@gmail.com</p>
                 </div>
                 <div className="flex flex-row gap-3 items-center bg-transparent">
-                  <FaEnvelope className="text-purple-700 text-2xl" />
-                  <p>johndoe@gmail.com</p>
+                  <FcGlobe className="text-purple-700 text-2xl" />
+                  <p className="text-xs font-mono font-bold ">wikipedia.com</p>
                 </div>
-                <div className="flex flex-row gap-3 items-center bg-slate-300">
-                  <FaEnvelope className="text-purple-700 text-2xl" />
-                  <p>johndoe@gmail.com</p>
-                </div>
-                <div className="flex flex-row gap-3 items-center">
-                  <FaEnvelope className="text-purple-700 text-2xl" />
-                  <p>johndoe@gmail.com</p>
+                <div className="flex flex-row gap-3 items-center bg-transparent">
+                  <GiGreenhouse className="text-purple-700 text-2xl" />
+                  <p className="text-xs font-mono font-bold ">418, Obafemi Awolowo Way, Ikeja Lagos.</p>
                 </div>
               </div>
             </div>
