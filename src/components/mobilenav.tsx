@@ -59,17 +59,17 @@ export default function MobileNav() {
             />
             <span className="text-2xl text-white">Grant Gwawoh{' '}👋</span>
           </div>
-          <Link href="/">
+          <Link href="#home">
             <li className="w-full h-8 leading-8 text-center text-2xl hover:text-white">
               HOME
             </li>
           </Link>
-          <Link href="/">
+          <Link href="#about">
             <li className="w-full h-8 leading-8 text-center text-2xl hover:text-white">
               ABOUT
             </li>
           </Link>
-          <Link href="/">
+          <Link href="#services">
             <li className="w-full h-8 leading-8 text-center text-2xl hover:text-white">
               SERVICES
             </li>

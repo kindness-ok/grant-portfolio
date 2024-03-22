@@ -85,7 +85,10 @@ export default function Home() {
         </div>
       </main>
       </section>
-      <section id='#home' className='h-full'>
+      <section id='about' className='h-full'>
+        <About />
+      </section>
+      <section id='services' className='h-full'>
         <div className="my-10">
           <div className="w-full flex flex-row justify-center items-center">
             <h2 className="text-black text-4xl font-mono font-bold relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-2 after:bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 after:h-1 after:w-full after:rounded-xl after:duration-300">
@@ -143,11 +146,58 @@ export default function Home() {
                 </p>
               </div>
             </div>
+            <div className="lg:col-span-1 flex flex-col items-center justify-center border-4 border-red-800 relative cursor-pointer">
+              <div className="w-4/6 border-4 border-green-800">
+                <Image 
+                  src={Sweing} 
+                  alt='display' 
+                  className='rounded-4xl w-full h-full object-contain' 
+                />
+              </div>
+              <div className="mt-5 w-4/6">
+                <div className="">   
+                  <h2 className="text-black text-2xl font-mono font-bold relative cursor-pointer">Sweing</h2>
+                </div>
+                <div className="mb-5">   
+                  <p className="text-slate-500 font-mono font-bold">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Suspendisse varius enim in eros elementum tristique.
+                  </p>
+                </div>
+              </div>
+              <div className="">
+                <p className="w-12 h-12 flex justify-center items-center text-xl bg-purple-700 text-white border-2 border-purple-700 rounded-full absolute bottom-24 left-1 lg:left-0">
+                  1
+                </p>
+              </div>
+            </div>
+            <div className="lg:col-span-1 flex flex-col items-center justify-center border-4 border-red-800 relative cursor-pointer">
+              <div className="w-4/6 border-4 border-green-800">
+                <Image 
+                  src={Sweing} 
+                  alt='display' 
+                  className='rounded-4xl w-full h-full object-contain' 
+                />
+              </div>
+              <div className="mt-5 w-4/6">
+                <div className="">   
+                  <h2 className="text-black text-2xl font-mono font-bold relative cursor-pointer">Sweing</h2>
+                </div>
+                <div className="mb-5">   
+                  <p className="text-slate-500 font-mono font-bold">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Suspendisse varius enim in eros elementum tristique.
+                  </p>
+                </div>
+              </div>
+              <div className="">
+                <p className="w-12 h-12 flex justify-center items-center text-xl bg-purple-700 text-white border-2 border-purple-700 rounded-full absolute bottom-24 left-1 lg:left-0">
+                  1
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-      <section id='about' className='h-full'>
-        <About />
       </section>
     </>
   );
