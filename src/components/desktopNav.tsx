@@ -25,7 +25,7 @@ export default function DesktopNav() {
             Home
           </li>
         </Link>
-        <Link href='/signup'>
+        <Link href='#about'>
           <li className="text-white relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 after:h-1 after:w-0 after:rounded-xl after:duration-300 hover:after:w-full">
             About
           </li>

@@ -15,7 +15,7 @@ export default function About () {
             </h2>
           </div>
           <div className="w-full grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5 h-full my-10">
-            <div className="md:col-span-2 flex flex-col pl-8 border-4 border-red-800 relative cursor-pointer">
+            <div className="md:col-span-2 flex flex-col pl-8 relative cursor-pointer">
               <div className="my-1">
                 <h2 className="text-black text-xl md:text-2xl font-mono font-bold ">Gwawoh Grant</h2>
               </div>
@@ -42,14 +42,14 @@ export default function About () {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-1 flex flex-col items-center justify-center border-4 border-red-800 cursor-pointer">
+            <div className="md:col-span-1 flex flex-col items-center justify-center">
               <Image
                 src={Grant}
                 alt="Logo"
                 className="w-60 h-60 rounded-full object-cover border-4 border-yellow-200"
               />
             </div>
-            <div className="pr-8 md:col-span-3 lg:col-span-2 flex flex-col border-4 border-red-800 cursor-pointer font-mono">
+            <div className="pr-8 md:col-span-3 lg:col-span-2 flex flex-col cursor-pointer font-mono">
               <div className="my-1">
                 <h2 className="text-black text-xl md:text-2xl font-mono font-bold ">My Professional Skills</h2>
               </div>
@@ -93,4 +93,4 @@ export default function About () {
         </div>
     </>
   )
-}
+};
