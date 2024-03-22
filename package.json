@@ -12,6 +12,7 @@
     "embla-carousel-autoplay": "^8.0.0",
     "embla-carousel-react": "^8.0.0",
     "next": "14.1.4",
+    "next-video": "^0.16.2",
     "react": "^18",
     "react-awesome-reveal": "^4.2.8",
     "react-dom": "^18",

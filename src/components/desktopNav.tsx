@@ -6,7 +6,7 @@ import GrantSews from "../../public/grant-sews.png";
 export default function DesktopNav() {
   return (
     <>
-    <header className="hidden sm:flex flex-row fixed justify-between items-center h-20 w-full bg-purple-700 ">
+    <header className="hidden sm:flex flex-row fixed justify-between items-center h-20 w-full bg-purple-700 z-10">
       <div className="flex flex-row text-white h-full justify-center items-center w-2/5 gap-3">
         <Image
           src={GrantSews}
@@ -16,7 +16,7 @@ export default function DesktopNav() {
           className="contrast-100 mix-blend-multiply filter-1"
         />
       <span className="text-2xl text-white">
-        Grant Sews
+        Grant Clothing
       </span>
       </div>
       <ul className="flex flex-row justify-around items-center h-10 w-1/2 ">
