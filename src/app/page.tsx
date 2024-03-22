@@ -180,11 +180,52 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-1 flex flex-col items-center justify-center border-4 border-red-800 relative cursor-pointer">
-              <h2>Running</h2>
+            <div className="md:col-span-1 flex flex-col items-center justify-center border-4 border-red-800 cursor-pointer">
+              <Image
+                src={Grant}
+                alt="Logo"
+                className="w-60 h-60 rounded-full object-cover border-4 border-yellow-200"
+              />
             </div>
-            <div className="md:col-span-3 lg:col-span-2 flex flex-col items-center justify-center border-4 border-red-800 relative cursor-pointer">
-              <h2>Running</h2>
+            <div className="pr-8 md:col-span-3 lg:col-span-2 flex flex-col border-4 border-red-800 cursor-pointer font-mono">
+              <div className="my-1">
+                <h2 className="text-black text-xl md:text-2xl font-mono font-bold ">My Professional Skills</h2>
+              </div>
+              <div className="">
+                <p className="text-gray-500 font-medium font-mono">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Suspendisse varius enim in eros elementum tristique.
+                </p>
+              </div>
+              <div className="flex flex-col w-full my-2 gap-2">
+                <div className="flex flex-col w-full">
+                  <div className="flex flex-row justify-between">
+                    <p>Crocheting</p>
+                    <p>90%</p>
+                  </div>
+                  <div className="w-full h-4 bg-slate-400 rounded-xl">
+                    <div className="w-[90%] h-4 bg-purple-700 rounded-xl"></div>
+                  </div>
+                </div>
+                <div className="flex flex-col w-full">
+                  <div className="flex flex-row justify-between">
+                    <p>Measuring</p>
+                    <p>95%</p>
+                  </div>
+                  <div className="w-full h-4 bg-slate-400 rounded-xl">
+                    <div className="w-[95%] h-4 bg-purple-700 rounded-xl"></div>
+                  </div>
+                </div>
+                <div className="flex flex-col w-full">
+                  <div className="flex flex-row justify-between">
+                    <p>Braiding</p>
+                    <p>75%</p>
+                  </div>
+                  <div className="w-full h-4 bg-slate-400 rounded-xl">
+                    <div className="w-[75%] h-4 bg-purple-700 rounded-xl"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
