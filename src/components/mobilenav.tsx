@@ -31,7 +31,7 @@ export default function MobileNav() {
 
   return (
     <>
-    <header className="flex sm:hidden fixed justify-between items-center h-16 w-full bg-purple-700">
+    <header className="flex sm:hidden fixed justify-between items-center h-16 w-full bg-purple-700 z-10">
       <div className="flex text-white justify-start items-center w-2/3 gap-1 pl-5">
         <Image
           src={GrantSews}
@@ -41,7 +41,7 @@ export default function MobileNav() {
           className="contrast-100 mix-blend-multiply filter-1"
         />
         <span className="text-xl bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text">
-          Grant Sews
+          Grant Clothing
         </span>
       </div>
       <ul className="flex justify-between items-center pr-5">
@@ -59,17 +59,17 @@ export default function MobileNav() {
             />
             <span className="text-2xl text-white">Grant Gwawoh{' '}👋</span>
           </div>
-          <Link href="/">
+          <Link href="#home">
             <li className="w-full h-8 leading-8 text-center text-2xl hover:text-white">
               HOME
             </li>
           </Link>
-          <Link href="/">
+          <Link href="#about">
             <li className="w-full h-8 leading-8 text-center text-2xl hover:text-white">
               ABOUT
             </li>
           </Link>
-          <Link href="/">
+          <Link href="#services">
             <li className="w-full h-8 leading-8 text-center text-2xl hover:text-white">
               SERVICES
             </li>
@@ -84,4 +84,4 @@ export default function MobileNav() {
       </header>  
     </>
   );
-}
+};
