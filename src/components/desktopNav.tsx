@@ -3,6 +3,10 @@ import Link from "next/link";
 import Tv from "../../public/tv.png";
 import GrantSews from "../../public/grant-sews.png";
 
+interface DesktopNavProps {
+  isScrolled: boolean;
+};
+
 export default function DesktopNav() {
   return (
     <>
@@ -35,7 +39,7 @@ export default function DesktopNav() {
             Services
           </li>
         </Link>
-        <Link href='/signup'>
+        <Link href='#contact'>
           <li className="w-32 h-16 flex flex-row justify-center items-center text-white bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 rounded-full font-medium">
             Contact
           </li>

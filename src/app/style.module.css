@@ -10,3 +10,13 @@
   height: 70vh;
   flex-direction: row;
 }
+.headerTwo {
+  color: #101A31;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.paragrahpTwo {
+  color: #101A31;
+  text-align: center;
+  font-size: 1rem;
+}
