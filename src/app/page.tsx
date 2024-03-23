@@ -25,20 +25,10 @@ import styles from './style.module.css';
 export default function Home() {
   
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
-  const [isScrolled, setIsScrolled] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.pageYOffset;
-      setIsScrolled(scrollY > 0);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
   return (
     <>
-      <DesktopNav isScrolled={isScrolled}/>
-      <MobileNav isScrolled={isScrolled}/>
+      <DesktopNav />
+      <MobileNav />
       <section id='#home' className='h-full lg:h-screen pt-20 bg-purple-700'>
       <main className="grid grid-cols-1 gap-4 lg:grid-cols-5 h-full">
         <div className='lg:col-span-3 flex flex-col items-center justify-center'>

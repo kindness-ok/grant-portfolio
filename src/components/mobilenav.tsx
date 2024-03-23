@@ -35,7 +35,7 @@ export default function MobileNav({ isScrolled }: MobileNavProps) {
 
   return (
     <>
-    <header className={` ${isScrolled ? "sticky": "fixed" } flex sm:hidden justify-between items-center h-16 w-full bg-purple-700 z-10`}>
+    <header className="flex sm:hidden justify-between sticky items-center h-16 w-full bg-purple-700 z-10 top-0">
       <div className="flex text-white justify-start items-center w-2/3 gap-1 pl-5">
         <Image
           src={GrantSews}

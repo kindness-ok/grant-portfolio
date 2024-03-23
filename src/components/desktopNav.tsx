@@ -7,10 +7,10 @@ interface DesktopNavProps {
   isScrolled: boolean;
 };
 
-export default function DesktopNav({ isScrolled }: DesktopNavProps) {
+export default function DesktopNav() {
   return (
     <>
-    <header className={`hidden ${isScrolled ? "sm:sticky": "sm:flex" } flex-row fixed justify-between items-center h-20 w-full bg-purple-700 z-10`}>
+    <header className="hidden sm:flex flex-row sticky top-0 justify-between items-center h-20 w-full bg-purple-700 z-10">
       <div className="flex flex-row text-white h-full justify-center items-center w-2/5 gap-3">
         <Image
           src={GrantSews}
