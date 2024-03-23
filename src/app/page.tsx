@@ -1,5 +1,6 @@
 "use client"
 
+import React, { useState, useEffect} from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import Video from "next-video";
@@ -24,6 +25,16 @@ import styles from './style.module.css';
 export default function Home() {
   
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.pageYOffset;
+      setIsScrolled(scrollY > 0);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <>
       <DesktopNav />
