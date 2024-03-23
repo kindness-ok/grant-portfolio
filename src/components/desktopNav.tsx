@@ -3,10 +3,14 @@ import Link from "next/link";
 import Tv from "../../public/tv.png";
 import GrantSews from "../../public/grant-sews.png";
 
-export default function DesktopNav({ isScrolled }: boolean) {
+interface DesktopNavProps {
+  isScrolled: boolean;
+};
+
+export default function DesktopNav({ isScrolled }: DesktopNavProps) {
   return (
     <>
-    <header className="hidden sm:flex flex-row fixed justify-between items-center h-20 w-full bg-purple-700 z-10">
+    <header className={` ${isScrolled ? "sm:sticky": "" } hidden sm:flex flex-row fixed justify-between items-center h-20 w-full bg-purple-700 z-10`}>
       <div className="flex flex-row text-white h-full justify-center items-center w-2/5 gap-3">
         <Image
           src={GrantSews}
