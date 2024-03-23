@@ -37,8 +37,8 @@ export default function Home() {
   }, []);
   return (
     <>
-      <DesktopNav />
-      <MobileNav />
+      <DesktopNav isScrolled={isScrolled}/>
+      <MobileNav isScrolled={isScrolled}/>
       <section id='#home' className='h-full lg:h-screen pt-20 bg-purple-700'>
       <main className="grid grid-cols-1 gap-4 lg:grid-cols-5 h-full">
         <div className='lg:col-span-3 flex flex-col items-center justify-center'>

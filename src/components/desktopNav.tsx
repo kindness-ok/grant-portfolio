@@ -3,7 +3,7 @@ import Link from "next/link";
 import Tv from "../../public/tv.png";
 import GrantSews from "../../public/grant-sews.png";
 
-export default function DesktopNav() {
+export default function DesktopNav({ isScrolled }: boolean) {
   return (
     <>
     <header className="hidden sm:flex flex-row fixed justify-between items-center h-20 w-full bg-purple-700 z-10">
