@@ -10,11 +10,7 @@ import { FaHome } from "react-icons/fa";
 import { IoMenuOutline } from "react-icons/io5";
 import Menu from "../../public/menu.svg";
 
-interface MobileNavProps {
-  isScrolled: boolean;
-};
-
-export default function MobileNav({ isScrolled }: MobileNavProps) {
+export default function MobileNav() {
   const sidebarRef = useRef<HTMLDivElement>();
   const [isToggle, setToggle] = useState<boolean>(false);
   const switchToggle = () => setToggle(!isToggle);
