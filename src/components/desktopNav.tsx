@@ -10,7 +10,7 @@ interface DesktopNavProps {
 export default function DesktopNav() {
   return (
     <>
-    <header className="hidden sm:flex flex-row sticky top-0 justify-between items-center h-20 w-full bg-purple-700 z-10">
+    <header className="hidden sm:flex flex-row fixed justify-between items-center h-20 w-full bg-purple-700 z-10">
       <div className="flex flex-row text-white h-full justify-center items-center w-2/5 gap-3">
         <Image
           src={GrantSews}
@@ -39,7 +39,7 @@ export default function DesktopNav() {
             Services
           </li>
         </Link>
-        <Link href='/signup'>
+        <Link href='#contact'>
           <li className="w-32 h-16 flex flex-row justify-center items-center text-white bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 rounded-full font-medium">
             Contact
           </li>

@@ -9,7 +9,6 @@ import Sweing from '../../public/sweing1.png';
 import Sweingtwo from '../../public/sweing2.png';
 import Sweingthree from '../../public/sweing3.png';
 import ImageGallery from "@/components/imageGallery";
-import About from '@/components/about';
 import styles from './style.module.css';
 
 export default function Services () {

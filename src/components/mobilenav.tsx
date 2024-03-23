@@ -31,7 +31,7 @@ export default function MobileNav() {
 
   return (
     <>
-    <header className="flex sm:hidden justify-between sticky items-center h-16 w-full bg-purple-700 z-10 top-0">
+    <header className="flex sm:hidden justify-between fixed items-center h-16 w-full bg-purple-700 z-10">
       <div className="flex text-white justify-start items-center w-2/3 gap-1 pl-5">
         <Image
           src={GrantSews}

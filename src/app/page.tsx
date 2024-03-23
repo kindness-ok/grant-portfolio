@@ -19,6 +19,8 @@ import Sweingtwo from '../../public/sweing2.png';
 import Sweingthree from '../../public/sweing3.png';
 import ImageGallery from "@/components/imageGallery";
 import About from '@/components/about';
+import Services from '@/components/service';
+import FooterContainer from '@/components/footer';
 import styles from './style.module.css';
 
 export default function Home() {
@@ -89,7 +91,9 @@ export default function Home() {
         <About />
       </section>
       <section id='services' className='h-full'>
+        <Services />
       </section>
+      <FooterContainer />
     </>
   );
 };
