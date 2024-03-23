@@ -9,16 +9,14 @@ import MobileNav from '../components/mobilenav';
 import DesktopNav from '../components/desktopNav';
 import Man from '../../public/man.png';
 import Clothone from '../../public/clothone.jpg';
-import { RxEnvelopeClosed } from "react-icons/rx";
-import { IoShieldCheckmarkSharp } from "react-icons/io5";
-import { GiGreenhouse } from "react-icons/gi";
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from "embla-carousel-autoplay";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import Grant from "../../public/grant.jpg";
-import { FcGlobe } from "react-icons/fc";
 import GrantSews from "../../public/grant-sews.png";
 import Sweing from '../../public/sweing1.png';
+import Sweingtwo from '../../public/sweing2.png';
+import Sweingthree from '../../public/sweing3.png';
 import About from '@/components/about';
 import styles from './style.module.css';
 
@@ -96,11 +94,11 @@ export default function Home() {
               Services
             </h2>
           </div>
-          <div className="w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 h-full my-10">
-            <div className="lg:col-span-1 flex flex-col items-center justify-center border-4 border-red-800 relative cursor-pointer">
-              <div className="w-4/6 border-4 border-green-800">
+          <div className="w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 h-full my-10 px-2">
+            <div className="lg:col-span-1 flex flex-col items-center justify-center relative cursor-pointer">
+              <div className="w-4/6">
                 <Image 
-                  src={Sweing} 
+                  src={Sweingthree} 
                   alt='display' 
                   className='rounded-4xl w-full h-full object-contain' 
                 />
@@ -122,8 +120,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="lg:col-span-1 flex flex-col items-center justify-center border-4 border-red-800 relative cursor-pointer">
-              <div className="w-4/6 border-4 border-green-800">
+            <div className="lg:col-span-1 flex flex-col items-center justify-center relative cursor-pointer">
+              <div className="w-4/6">
                 <Image 
                   src={Sweing} 
                   alt='display' 
@@ -132,7 +130,7 @@ export default function Home() {
               </div>
               <div className="mt-5 w-4/6">
                 <div className="">   
-                  <h2 className="text-black text-2xl font-mono font-bold relative cursor-pointer">Sweing</h2>
+                  <h2 className="text-black text-2xl font-mono font-bold relative cursor-pointer">Measurement</h2>
                 </div>
                 <div className="mb-5">   
                   <p className="text-slate-500 font-mono font-bold">
@@ -143,21 +141,21 @@ export default function Home() {
               </div>
               <div className="">
                 <p className="w-12 h-12 flex justify-center items-center text-xl bg-purple-700 text-white border-2 border-purple-700 rounded-full absolute bottom-24 left-1 lg:left-0">
-                  1
+                  2
                 </p>
               </div>
             </div>
-            <div className="lg:col-span-1 flex flex-col items-center justify-center border-4 border-red-800 relative cursor-pointer">
-              <div className="w-4/6 border-4 border-green-800">
+            <div className="lg:col-span-1 flex flex-col items-center justify-center relative cursor-pointer">
+              <div className="w-4/6">
                 <Image 
-                  src={Sweing} 
+                  src={Sweingtwo} 
                   alt='display' 
                   className='rounded-4xl w-full h-full object-contain' 
                 />
               </div>
               <div className="mt-5 w-4/6">
                 <div className="">   
-                  <h2 className="text-black text-2xl font-mono font-bold relative cursor-pointer">Sweing</h2>
+                  <h2 className="text-black text-2xl font-mono font-bold relative cursor-pointer">Already Made</h2>
                 </div>
                 <div className="mb-5">   
                   <p className="text-slate-500 font-mono font-bold">
@@ -168,36 +166,60 @@ export default function Home() {
               </div>
               <div className="">
                 <p className="w-12 h-12 flex justify-center items-center text-xl bg-purple-700 text-white border-2 border-purple-700 rounded-full absolute bottom-24 left-1 lg:left-0">
-                  1
-                </p>
-              </div>
-            </div>
-            <div className="lg:col-span-1 flex flex-col items-center justify-center border-4 border-red-800 relative cursor-pointer">
-              <div className="w-4/6 border-4 border-green-800">
-                <Image 
-                  src={Sweing} 
-                  alt='display' 
-                  className='rounded-4xl w-full h-full object-contain' 
-                />
-              </div>
-              <div className="mt-5 w-4/6">
-                <div className="">   
-                  <h2 className="text-black text-2xl font-mono font-bold relative cursor-pointer">Sweing</h2>
-                </div>
-                <div className="mb-5">   
-                  <p className="text-slate-500 font-mono font-bold">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Suspendisse varius enim in eros elementum tristique.
-                  </p>
-                </div>
-              </div>
-              <div className="">
-                <p className="w-12 h-12 flex justify-center items-center text-xl bg-purple-700 text-white border-2 border-purple-700 rounded-full absolute bottom-24 left-1 lg:left-0">
-                  1
+                  3
                 </p>
               </div>
             </div>
           </div>
+          
+
+          <div className="grid w-full grid-cols-2 md:grid-cols-4 gap-4 px-3">
+            <div className="grid gap-4">
+              <div>
+                <img width={0} height={0} style={{ width: '100%', height: 'auto' }} className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="imagegrid"/>
+              </div>
+              <div>
+                <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="imagegrid"/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="imagegrid"/>
+        </div>
+    </div>
+    <div className="grid gap-4">
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="imagegrid"/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="imagegrid"/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="imagegrid"/>
+        </div>
+    </div>
+    <div className="grid gap-4">
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="imagegrid"/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="imagegrid"/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="imagegrid"/>
+        </div>
+    </div>
+    <div className="grid gap-4">
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="imagegrid"/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="imagegrid"/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="imagegrid"/>
+        </div>
+    </div>
+</div>
+
         </div>
       </section>
     </>

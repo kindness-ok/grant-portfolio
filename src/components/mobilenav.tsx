@@ -51,7 +51,7 @@ export default function MobileNav() {
       </ul>
       <div ref={sidebarRef} className={`z-10 bg-purple-700 fixed top-0 h-full w-3/4 transition-all duration-700 ease-in-out overflow-auto ${isToggle ?  "left-0" : "-left-3/4" }`}>
         <ul className="mt-5 flex flex-col gap-4">
-          <div className="flex flex-col gap-1 text-white justify-center items-center">
+          <div className="flex flex-col gap-1 text-white justify-center mb-8 items-center">
             <Image
               src={Grant}
               alt="Logo"
@@ -60,7 +60,7 @@ export default function MobileNav() {
             <span className="text-2xl text-white">Grant Gwawoh{' '}👋</span>
           </div>
           <Link href="#home">
-            <li className="w-full h-8 leading-8 text-center text-2xl hover:text-white">
+            <li className="w-full h-8 leading-8 text-center text-2xl text-white hover:text-white">
               HOME
             </li>
           </Link>
