@@ -172,6 +172,19 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className='w-full my-8 font-mono'>
+            <div className='w-full flex flex-col justify-center items-center'>
+              <h1 className={styles.headerTwo}>
+                Why Need My Services?
+              </h1>
+            </div>
+            <div className='w-full flex flex-col justify-center items-center'>
+              <p className={styles.paragrahpTwo}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br>
+                Suspendisse varius enim in eros.
+              </p>
+            </div>
+          </div>
           <ImageGallery />
         </div>
       </section>
