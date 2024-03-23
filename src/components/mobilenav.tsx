@@ -14,7 +14,7 @@ interface MobileNavProps {
   isScrolled: boolean;
 };
 
-export default function MobileNav() {
+export default function MobileNav({ isScrolled }: MobileNavProps) {
   const sidebarRef = useRef<HTMLDivElement>();
   const [isToggle, setToggle] = useState<boolean>(false);
   const switchToggle = () => setToggle(!isToggle);
@@ -35,7 +35,7 @@ export default function MobileNav() {
 
   return (
     <>
-    <header className="flex sm:hidden fixed justify-between items-center h-16 w-full bg-purple-700 z-10">
+    <header className={` ${isScrolled ? "sticky": "fixed" } flex sm:hidden justify-between items-center h-16 w-full bg-purple-700 z-10`}>
       <div className="flex text-white justify-start items-center w-2/3 gap-1 pl-5">
         <Image
           src={GrantSews}
