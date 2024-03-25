@@ -4,6 +4,8 @@ import React, { useState, useEffect} from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import Video from "next-video";
+import { motion } from "framer-motion"
+import { FaWhatsapp } from "react-icons/fa6";
 import { Typewriter } from 'react-simple-typewriter'
 import MobileNav from '../components/mobilenav';
 import DesktopNav from '../components/desktopNav';
@@ -94,6 +96,16 @@ export default function Home() {
         <Services />
       </section>
       <FooterContainer />
+        <div>
+            <button 
+              className='w-10 h-10 flex justify-center items-center text-xl bg-green-400 text-white bottom-5 lg:bottom-10 fixed right-2 lg:right-5 rounded-full z-5'
+              type='button' 
+            >
+              <FaWhatsapp 
+                className="text-2xl"
+              />
+            </button>
+        </div>
     </>
   );
 };
