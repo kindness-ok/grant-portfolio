@@ -34,15 +34,31 @@ export default function Home() {
       <DesktopNav />
       <MobileNav />
       <section id='#home' className='h-full lg:h-screen pt-20 bg-purple-700'>
-      <main className="grid grid-cols-1 gap-4 lg:grid-cols-5 h-full">
-        <div className='lg:col-span-3 justify-center'>
-          <div className="ml-10 mt-16 flex flex-row items-center border-2 border-red-800">
-            <h1 className="text-5xl text-white  font-bold">
+      <main className="grid grid-cols-1 gap-4 lg:grid-cols-5 h-full font-mono">
+        <div className='lg:col-span-3 justify-center px-3 lg:pl-10 lg:px-0'>
+          <div className="mt-16 flex flex-row items-center border-2 border-red-800">
+            <h1 className="text-4xl lg:text-5xl text-white  font-bold">
               Hi, {text} {' '}<span className="bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text">Grant Grawoh</span>.{' '}
               <span className="text-4xl" role="img" aria-label="waving hand">
                 👋
               </span>
             </h1>
+          </div>
+          <div className='my-5 flex flex-row items-center border-2'>
+            <h1 className="text-2xl text-white  font-bold">
+                <Typewriter
+                  words={['I make cloths that Suits You.', 'I make cloths that Complement You.', 'I make cloths that Empower You.', 'I make cloths that Suits You.']}
+                  loop={5}
+                  cursor
+                  cursorStyle='|'
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
+            </h1>
+          </div>
+          <div className=''>
+            <button type='button' className='w-36 h-14 border-2 text-white text-xl border-purple-600 rounded-2xl bg-purple-600'>Hire Me</button>
           </div>
         </div>
         <div className="lg:col-span-2 h-full flex justify-center items-center md:rounded-l-[150px] bg-purple-600">
