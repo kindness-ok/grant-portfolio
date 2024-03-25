@@ -4,6 +4,9 @@ import React, { useState, useEffect} from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import Video from "next-video";
+import { motion } from "framer-motion";
+import { FaTwitter, FaFacebook, FaYoutube, FaInstagramSquare } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa6";
 import { Typewriter } from 'react-simple-typewriter'
 import MobileNav from '../components/mobilenav';
 import DesktopNav from '../components/desktopNav';
@@ -23,6 +26,8 @@ import Services from '@/components/service';
 import FooterContainer from '@/components/footer';
 import styles from './style.module.css';
 
+const text = `I'm`;
+const textTwo = `Let's Talk`;
 export default function Home() {
   
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
@@ -30,58 +35,66 @@ export default function Home() {
     <>
       <DesktopNav />
       <MobileNav />
-      <section id='#home' className='h-full lg:h-screen pt-20 bg-purple-700'>
-      <main className="grid grid-cols-1 gap-4 lg:grid-cols-5 h-full">
-        <div className='lg:col-span-3 flex flex-col items-center justify-center'>
-          <div className="flex justify-center items-center">
-            <Image
-              src={Grant}
-              alt="Logo"
-              className="rounded-full  w-52 h-52 object-cover border-4 border-yellow-200"
-            />
-          </div>
-          <div className="ml-10 my-2">
-            <h1 className="text-4xl text-white  font-bold">
-              Hi, I am <span className="bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text">Grant Grawoh</span>.{' '}
-              <span className="wave-emoji" role="img" aria-label="waving hand">
+      <section id='#home' className='h-full md:h-screen pt-20 bg-purple-700'>
+      <main className="grid grid-cols-1 gap-4 lg:grid-cols-5 h-full font-mono">
+        <div className='lg:col-span-3 justify-center px-3 lg:pl-10 lg:px-0'>
+          <div className="mt-16 flex flex-row items-center">
+            <h1 className="text-4xl lg:text-5xl text-white  font-bold">
+              Hi, {text} {' '}<span className="bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text">Grant Grawoh</span>.{' '}
+              <span className="text-4xl" role="img" aria-label="waving hand">
                 👋
               </span>
             </h1>
           </div>
-          <div className="ml-10 mb-5">
-            <h2 className="text-2xl text-white monospace font-bold">
-                {/* Style will be inherited from the parent element */}
+          <div className='my-5 flex flex-row items-center'>
+            <h1 className="text-xl md:text-4xl text-white font-bold">
+              Discover True Personalization<br></br>For Your Path To<br></br>
+              <span className='bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text text-2xl md:text-5xl'>
                 <Typewriter
-                  words={['I make cloths that Suits You.', 'I make cloths that Complement You.', 'I make cloths that Empower You.', 'I make cloths that Suits You.']}
+                  words={['Sucess.', 'Accomplishment.', 'Wealth.', 'Perfection.']}
                   loop={5}
                   cursor
                   cursorStyle='|'
-                  typeSpeed={70}
-                  deleteSpeed={50}
-                  delaySpeed={1000}
+                  typeSpeed={120}
+                  deleteSpeed={150}
+                  delaySpeed={1800}
                 />
-            </h2>
+              </span>
+            </h1>
           </div>
-          <div className="flex flex-row w-2/3 gap-8 mt-5 ml-10">
-            <div className="">
-              <i className="text-purple-800 text-6xl"><RiVerifiedBadgeFill className="text-blue-500" /> </i>
+          <div className='flex flex-row gap-5 mt-16'>
+            <button type='button' className='w-36 h-14 border-2 text-white text-xl border-purple-600 rounded-2xl bg-purple-600 hover:bg-transparent'>Hire Me</button>
+            <button type='button' className='w-36 h-14 border-2 text-white text-xl border-purple-600 rounded-2xl hover:bg-purple-600'>{textTwo}</button>
+          </div>
+          <div className='flex flex-col md:flex-row justify-between w-full md:w-4/5 gap-2 mt-5'>
+            <div className='flex flex-row md:gap-8 w-full justify-around md:justify-start md:w-2/3 my-4 md:mt-0'>
+              <Link href='/instagram' className=''>
+                <i className="text-blue-600 duration-200 text-4xl"><FaFacebook /></i>
+              </Link>
+              <Link href='/youtube' className=''>
+                <i className="text-green-600 duration-200 text-4xl"><FaWhatsapp /></i>
+              </Link>
+              <Link href='/twitter' className=''>
+                <i className="text-blue-600 duration-200 text-4xl"><FaTwitter /></i>
+              </Link>
+              <Link href='/instagram' className=''>
+                <i className="text-red-600 duration-200 text-4xl"><FaInstagram /></i>
+              </Link>
+              <Link href='/instagram' className='block md:hidden'>
+                <i className="text-purple-800 text-4xl"><RiVerifiedBadgeFill className="text-blue-500" /> </i>
+              </Link>
             </div>
-            <div className="flex flex-col justify-center items-center">
-              <p className="text-center text-white">2k+</p>
-              <p className="text-slate-200">Services</p>
-            </div>
-            <div className="flex flex-col justify-center items-center">
-              <p className="text-center text-white">200+</p>
-              <p className="text-slate-200">Clients</p>
+            <div className='hidden md:block'>
+              <i className="text-purple-800 text-4xl"><RiVerifiedBadgeFill className="text-blue-500" /> </i>
             </div>
           </div>
         </div>
         <div className="lg:col-span-2 h-full flex justify-center items-center md:rounded-l-[150px] bg-purple-600">
           <div className="w-full h-5/6 flex items-center justify-center overflow-hidden " ref={emblaRef} >
             <div className='flex flex-row w-full h-full'>
-                <Image src={Clothone} alt='display' className='rounded-4xl mx-20 w-96 h-full object-cover' />
                 <Image src={Man} alt='display' className='rounded-4xl mx-20 w-96 h-full object-cover' />
-                <Image src={GrantSews} alt='display' className='rounded-4xl mx-20 w-80 h-full object-cover'  />
+                <Image src={Clothone} alt='display' className='rounded-4xl mx-20 w-96 h-full object-cover' />
+                <Image src={Man} alt='display' className='rounded-4xl mx-20 w-80 h-full object-cover'  />
             </div>
           </div>
         </div>
@@ -94,6 +107,16 @@ export default function Home() {
         <Services />
       </section>
       <FooterContainer />
+        <div>
+            <button 
+              className='w-10 h-10 flex justify-center items-center text-xl bg-green-400 text-white bottom-7 lg:bottom-10 fixed right-2 lg:right-5 rounded-full z-5'
+              type='button' 
+            >
+              <FaWhatsapp 
+                className="text-2xl"
+              />
+            </button>
+        </div>
     </>
   );
 };

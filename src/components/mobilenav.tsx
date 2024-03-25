@@ -7,7 +7,7 @@ import Tv from '../../public/tv.png';
 import GrantSews from "../../public/grant-sews.png";
 import Grant from "../../public/grant.jpg";
 import { FaHome } from "react-icons/fa";
-import { IoMenuOutline } from "react-icons/io5";
+import { IoMenuOutline, IoCloseSharp } from "react-icons/io5";
 import Menu from "../../public/menu.svg";
 
 export default function MobileNav() {
@@ -31,22 +31,26 @@ export default function MobileNav() {
 
   return (
     <>
-    <header className="flex sm:hidden justify-between fixed items-center h-16 w-full bg-purple-700 z-10">
+    <header className="flex sm:hidden justify-between fixed items-center h-16 w-full bg-purple-700 z-10 font-mono">
       <div className="flex text-white justify-start items-center w-2/3 gap-1 pl-5">
-        <Image
+        {/* <Image
           src={GrantSews}
           alt="Logo"
           width={50}
           height={50}
           className="contrast-100 mix-blend-multiply filter-1"
-        />
+        /> */}
         <span className="text-xl bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text">
           Grant Clothing
         </span>
       </div>
       <ul className="flex justify-between items-center pr-5">
-        <button type="button" ref={sidebarRef} onClick={switchToggle} className="">
-            <IoMenuOutline className="text-4xl text-yellow-200" />
+        <button type="button" ref={sidebarRef} className=" transition-all duration-400 ease-in-out">
+          {
+            isToggle 
+            ? <IoCloseSharp className="text-4xl text-yellow-200" />
+            : <IoMenuOutline onClick={switchToggle} className="text-4xl text-yellow-200" />
+          }
         </button>
       </ul>
       <div ref={sidebarRef} className={`z-10 bg-purple-700 fixed top-0 h-full w-3/4 transition-all duration-700 ease-in-out overflow-auto ${isToggle ?  "left-0" : "-left-3/4" }`}>
