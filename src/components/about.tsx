@@ -2,6 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import { RxEnvelopeClosed } from "react-icons/rx";
 import { GiGreenhouse } from "react-icons/gi";
+import { FcCellPhone } from "react-icons/fc";
 import Grant from "../../public/grant.jpg";
 import { FcGlobe } from "react-icons/fc";
 import { Fade } from "react-awesome-reveal";
@@ -31,12 +32,16 @@ export default function About () {
               </div>
               <div className="flex flex-col w-full my-2 gap-1">
                 <div className="flex flex-row gap-3 items-center">
-                  <RxEnvelopeClosed className="text-purple-700 text-2xl" />
-                  <p className="text-xs font-mono font-bold ">johndoe@gmail.com</p>
-                </div>
-                <div className="flex flex-row gap-3 items-center">
                   <FcGlobe className="text-purple-700 text-2xl" />
                   <p className="text-xs font-mono font-bold ">wikipedia.com</p>
+                </div>
+                <div className="flex flex-row gap-3 items-center">
+                  <FcCellPhone className="text-purple-700 text-2xl" />
+                  <p className="text-xs font-mono font-bold hover:underline">+2349014231777</p>
+                </div>
+                <div className="flex flex-row gap-3 items-center">
+                  <RxEnvelopeClosed className="text-purple-700 text-2xl" />
+                  <p className="text-xs font-mono font-bold hover:underline">gredgwaint@gmail.com</p>
                 </div>
                 <div className="flex flex-row gap-3 items-center bg-transparent">
                   <GiGreenhouse className="text-purple-700 text-2xl" />

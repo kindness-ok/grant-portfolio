@@ -7,7 +7,7 @@ import Tv from '../../public/tv.png';
 import GrantSews from "../../public/grant-sews.png";
 import Grant from "../../public/grant.jpg";
 import { FaHome } from "react-icons/fa";
-import { IoMenuOutline } from "react-icons/io5";
+import { IoMenuOutline, IoCloseSharp } from "react-icons/io5";
 import Menu from "../../public/menu.svg";
 
 export default function MobileNav() {
@@ -45,8 +45,12 @@ export default function MobileNav() {
         </span>
       </div>
       <ul className="flex justify-between items-center pr-5">
-        <button type="button" ref={sidebarRef} onClick={switchToggle} className="">
-            <IoMenuOutline className="text-4xl text-yellow-200" />
+        <button type="button" ref={sidebarRef} className=" transition-all duration-400 ease-in-out">
+          {
+            isToggle 
+            ? <IoCloseSharp className="text-4xl text-yellow-200" />
+            : <IoMenuOutline onClick={switchToggle} className="text-4xl text-yellow-200" />
+          }
         </button>
       </ul>
       <div ref={sidebarRef} className={`z-10 bg-purple-700 fixed top-0 h-full w-3/4 transition-all duration-700 ease-in-out overflow-auto ${isToggle ?  "left-0" : "-left-3/4" }`}>

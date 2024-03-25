@@ -46,20 +46,23 @@ export default function Home() {
               </span>
             </h1>
           </div>
-          <div className='my-5 flex flex-row items-center border-2'>
-            <h1 className="text-2xl text-white  font-bold">
+          <div className='my-5 flex flex-row items-center'>
+            <h1 className="text-xl md:text-4xl text-white font-bold">
+              Discover True Personalization<br></br>For Your Path To<br></br>
+              <span className='bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text text-2xl md:text-5xl'>
                 <Typewriter
-                  words={['I make cloths that Suits You.', 'I make cloths that Complement You.', 'I make cloths that Empower You.', 'I make cloths that Suits You.']}
+                  words={['Sucess.', 'Accomplishment.', 'Wealth.', 'Perfection.']}
                   loop={5}
                   cursor
                   cursorStyle='|'
-                  typeSpeed={70}
-                  deleteSpeed={50}
-                  delaySpeed={1000}
+                  typeSpeed={120}
+                  deleteSpeed={150}
+                  delaySpeed={1800}
                 />
+              </span>
             </h1>
           </div>
-          <div className='flex flex-row gap-5'>
+          <div className='flex flex-row gap-5 mt-16'>
             <button type='button' className='w-36 h-14 border-2 text-white text-xl border-purple-600 rounded-2xl bg-purple-600 hover:bg-transparent'>Hire Me</button>
             <button type='button' className='w-36 h-14 border-2 text-white text-xl border-purple-600 rounded-2xl hover:bg-purple-600'>{textTwo}</button>
           </div>
@@ -106,7 +109,7 @@ export default function Home() {
       <FooterContainer />
         <div>
             <button 
-              className='w-10 h-10 flex justify-center items-center text-xl bg-green-400 text-white bottom-5 lg:bottom-10 fixed right-2 lg:right-5 rounded-full z-5'
+              className='w-10 h-10 flex justify-center items-center text-xl bg-green-400 text-white bottom-7 lg:bottom-10 fixed right-2 lg:right-5 rounded-full z-5'
               type='button' 
             >
               <FaWhatsapp 
