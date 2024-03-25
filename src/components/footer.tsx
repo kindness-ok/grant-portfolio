@@ -19,6 +19,7 @@ export default function FooterContainer() {
           </div>
           <div className="my-7 w-full">
             <form>
+              <Fade>
               <div className="w-full flex flex-col justify-center items-center gap-2">
                 <div className="w-full grid-cols-1 lg:w-4/6 grid md:grid-cols-2 gap-2">
                   <div className="col-span-1">
@@ -35,8 +36,10 @@ export default function FooterContainer() {
                   <button type="submit" className="w-40 h-10 text-white bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">Send</button>
                 </div>
               </div>
+              </Fade>
             </form>
           </div>
+          <Fade>
           <div className='flex justify-around md:justify-evenly items-center w-full my-4 md:mt-0'>
             <Link href='/youtube' className=''>
               <i className="text-red-600 duration-200 text-5xl"><FaYoutube /></i>
@@ -51,6 +54,7 @@ export default function FooterContainer() {
               <i className="text-red-600 duration-200 text-5xl"><FaInstagramSquare /></i>
             </Link>
           </div>
+          </Fade>
           <div className="my-10 flex flex-col justify-center items-center">
             <p className="text-black">Created and Licensed By{' '}
               <Link href='google.com'><span className="text-purple-700">Kindness Okpugie</span></Link>
