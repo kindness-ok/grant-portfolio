@@ -4,6 +4,7 @@ import { RxEnvelopeClosed } from "react-icons/rx";
 import { GiGreenhouse } from "react-icons/gi";
 import Grant from "../../public/grant.jpg";
 import { FcGlobe } from "react-icons/fc";
+import { Fade } from "react-awesome-reveal";
 
 export default function About () {
   return (
@@ -16,6 +17,7 @@ export default function About () {
           </div>
           <div className="w-full grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5 h-full my-10 px-2 lg:px-0">
             <div className="md:col-span-2 flex flex-col lg:pl-8 relative cursor-pointer">
+            <Fade direction="left" duration={1000} delay={200} triggerOnce>
               <div className="my-1">
                 <h2 className="text-black text-xl md:text-2xl font-mono font-bold ">Gwawoh Grant</h2>
               </div>
@@ -41,15 +43,19 @@ export default function About () {
                   <p className="text-xs font-mono font-bold ">418, Obafemi Awolowo Way, Ikeja Lagos.</p>
                 </div>
               </div>
+            </Fade>
             </div>
             <div className="md:col-span-1 flex flex-col items-center lg:items-start">
+              <Fade direction="up" duration={1000} delay={200} triggerOnce>
               <Image
                 src={Grant}
                 alt="Logo"
                 className="w-60 h-60 rounded-full object-cover border-4 border-purple-700"
               />
+              </Fade>
             </div>
             <div className="lg:pr-8 md:col-span-3 lg:col-span-2 flex flex-col cursor-pointer font-mono">
+            <Fade direction="right" duration={1000} delay={200} triggerOnce>
               <div className="my-1">
                 <h2 className="text-black text-xl md:text-2xl font-mono font-bold ">My Professional Skills</h2>
               </div>
@@ -115,6 +121,7 @@ export default function About () {
                   </div>
                 </div>
               </div>
+              </Fade>
             </div>
           </div>
         </div>
