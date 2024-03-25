@@ -25,6 +25,7 @@ import Services from '@/components/service';
 import FooterContainer from '@/components/footer';
 import styles from './style.module.css';
 
+const text = `I'm`;
 export default function Home() {
   
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
@@ -34,11 +35,11 @@ export default function Home() {
       <MobileNav />
       <section id='#home' className='h-full lg:h-screen pt-20 bg-purple-700'>
       <main className="grid grid-cols-1 gap-4 lg:grid-cols-5 h-full">
-        <div className='lg:col-span-3 flex flex-col items-center justify-center'>
-          <div className="ml-10 my-2">
-            <h1 className="text-4xl text-white  font-bold">
-              Hi, I am <span className="bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text">Grant Grawoh</span>.{' '}
-              <span className="wave-emoji" role="img" aria-label="waving hand">
+        <div className='lg:col-span-3 justify-center'>
+          <div className="ml-10 mt-16 flex flex-row items-center border-2 border-red-800">
+            <h1 className="text-5xl text-white  font-bold">
+              Hi, {text} {' '}<span className="bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text">Grant Grawoh</span>.{' '}
+              <span className="text-4xl" role="img" aria-label="waving hand">
                 👋
               </span>
             </h1>
