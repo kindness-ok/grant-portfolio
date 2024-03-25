@@ -4,8 +4,9 @@ import React, { useState, useEffect} from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import Video from "next-video";
-import { motion } from "framer-motion"
-import { FaWhatsapp } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import { FaTwitter, FaFacebook, FaYoutube, FaInstagramSquare } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa6";
 import { Typewriter } from 'react-simple-typewriter'
 import MobileNav from '../components/mobilenav';
 import DesktopNav from '../components/desktopNav';
@@ -26,6 +27,7 @@ import FooterContainer from '@/components/footer';
 import styles from './style.module.css';
 
 const text = `I'm`;
+const textTwo = `Let's Talk`;
 export default function Home() {
   
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
@@ -57,8 +59,31 @@ export default function Home() {
                 />
             </h1>
           </div>
-          <div className=''>
-            <button type='button' className='w-36 h-14 border-2 text-white text-xl border-purple-600 rounded-2xl bg-purple-600'>Hire Me</button>
+          <div className='flex flex-row gap-5'>
+            <button type='button' className='w-36 h-14 border-2 text-white text-xl border-purple-600 rounded-2xl bg-purple-600 hover:bg-transparent'>Hire Me</button>
+            <button type='button' className='w-36 h-14 border-2 text-white text-xl border-purple-600 rounded-2xl hover:bg-purple-600'>{textTwo}</button>
+          </div>
+          <div className='flex flex-col md:flex-row justify-between w-full md:w-4/5 gap-2 mt-5'>
+            <div className='flex flex-row md:gap-8 w-full justify-around md:justify-start md:w-2/3 my-4 md:mt-0'>
+              <Link href='/instagram' className=''>
+                <i className="text-blue-600 duration-200 text-4xl"><FaFacebook /></i>
+              </Link>
+              <Link href='/youtube' className=''>
+                <i className="text-green-600 duration-200 text-4xl"><FaWhatsapp /></i>
+              </Link>
+              <Link href='/twitter' className=''>
+                <i className="text-blue-600 duration-200 text-4xl"><FaTwitter /></i>
+              </Link>
+              <Link href='/instagram' className=''>
+                <i className="text-red-600 duration-200 text-4xl"><FaInstagram /></i>
+              </Link>
+              <Link href='/instagram' className='block md:hidden'>
+                <i className="text-purple-800 text-4xl"><RiVerifiedBadgeFill className="text-blue-500" /> </i>
+              </Link>
+            </div>
+            <div className='hidden md:block'>
+              <i className="text-purple-800 text-4xl"><RiVerifiedBadgeFill className="text-blue-500" /> </i>
+            </div>
           </div>
         </div>
         <div className="lg:col-span-2 h-full flex justify-center items-center md:rounded-l-[150px] bg-purple-600">
