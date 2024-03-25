@@ -33,13 +33,13 @@ export default function MobileNav() {
     <>
     <header className="flex sm:hidden justify-between fixed items-center h-16 w-full bg-purple-700 z-10 font-mono">
       <div className="flex text-white justify-start items-center w-2/3 gap-1 pl-5">
-        <Image
+        {/* <Image
           src={GrantSews}
           alt="Logo"
           width={50}
           height={50}
           className="contrast-100 mix-blend-multiply filter-1"
-        />
+        /> */}
         <span className="text-xl bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text">
           Grant Clothing
         </span>

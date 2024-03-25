@@ -35,10 +35,10 @@ export default function Home() {
     <>
       <DesktopNav />
       <MobileNav />
-      <section id='#home' className='h-full lg:h-screen pt-20 bg-purple-700'>
+      <section id='#home' className='h-full md:h-screen pt-20 bg-purple-700'>
       <main className="grid grid-cols-1 gap-4 lg:grid-cols-5 h-full font-mono">
         <div className='lg:col-span-3 justify-center px-3 lg:pl-10 lg:px-0'>
-          <div className="mt-16 flex flex-row items-center border-2 border-red-800">
+          <div className="mt-16 flex flex-row items-center">
             <h1 className="text-4xl lg:text-5xl text-white  font-bold">
               Hi, {text} {' '}<span className="bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text">Grant Grawoh</span>.{' '}
               <span className="text-4xl" role="img" aria-label="waving hand">
