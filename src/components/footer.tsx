@@ -4,11 +4,24 @@ import { IoShieldCheckmarkSharp } from "react-icons/io5";
 import { FaTwitter, FaFacebook, FaYoutube, FaInstagramSquare } from "react-icons/fa";
 import Projectone from '../../../public/projectone.png';
 import { Fade } from "react-awesome-reveal";
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster, toast } from '@/utils/toast';
+import useUtilities from '@/utils/index';
 import style from './style.module.css'
 
 export default function FooterContainer() {
-  const notify = () => toast.loading("Sending Message");
+  const notify = () =>  {
+    toast.success("Sending Message");
+  }
+  const {
+    error,
+    sendMailAction,
+    nameText,
+    emailText,
+    messageText,
+    handleNameChange,
+    handleEmailChange,
+    handleMessageChange,
+  } = useUtilities();
 
   return (
 		  <footer className="mt-16 font-mono text-black px-2 flex flex-col">
@@ -23,22 +36,43 @@ export default function FooterContainer() {
             </h2>
           </div>
           <div className="my-7 w-full">
-            <form action={()=>notify()}>
+            <form action={sendMailAction}>
               <Fade>
               <div className="w-full flex flex-col justify-center items-center gap-2">
                 <div className="w-full lg:w-4/6 ">
-                  <p className="text-red-600">Error occured when sending the mail</p>
+                  <p className="text-red-600">{!!error && error}</p>
                 </div>
                 <div className="w-full grid-cols-1 lg:w-4/6 grid md:grid-cols-2 gap-2">
                   <div className="col-span-1">
-                    <input placeholder="Name" type='text' required={true} className={style.inputText} />
+                    <input 
+                      placeholder="Name" 
+                      type='text' 
+                      required={true} 
+                      className={style.inputText}
+                      value={nameText}
+                      onChange={handleNameChange}
+                    />
                   </div>
                   <div className="col-span-1">
-                    <input placeholder="Email" type='email' required={true} className={style.inputText} />
+                    <input 
+                      placeholder="Email" 
+                      type='email' 
+                      required={true} 
+                      className={style.inputText} 
+                      value={emailText}
+                      onChange={handleEmailChange}
+                    />
                   </div>
                 </div>
                 <div className="w-full lg:w-4/6">
-                  <textarea placeholder="Message..." required={true} className={style.textArea}></textarea>
+                  <textarea 
+                    placeholder="Message..." 
+                    required={true} 
+                    className={style.textArea}
+                    value={messageText}
+                    onChange={handleMessageChange}
+                  >
+                  </textarea>
                 </div>
                 <div className="">
                   <button type="submit" className="w-40 h-10 text-white bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">Send</button>

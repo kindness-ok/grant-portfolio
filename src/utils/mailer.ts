@@ -1,7 +1,13 @@
 import nodemailer from 'nodemailer';
 
+interface mailTemplateActionProps {
+    name: string;
+    mail: string;
+    message: string;
+};
+
 const transporter = nodemailer.createTransport({
-  host: process.env.NEXT_PUBLIC_BREVO_HOST,
+  host: process.env.NEXT_PUBLIC_BREVO_HOST as string,
   port: process.env.NEXT_PUBLIC_BREVO_PORT,
   pool: true,
   auth: {
@@ -10,8 +16,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-
-const userWelcomeMail = async (name, mail, message) => {
+const mailTemplateAction = async ({name, mail, message}: mailTemplateActionProps) => {
     const messageTemplate = `
         <div>
             <table align="center" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
@@ -34,7 +39,7 @@ const userWelcomeMail = async (name, mail, message) => {
         </div>
     ` 
     const mailOptions = {
-        from: process.env.BREVO_USER,
+        from: process.env.NEXT_PUBLIC_BREVO_HOST,
         to: mail,
         subject: "New Message From grant.com site!",
         html: messageTemplate,
@@ -51,4 +56,4 @@ const userWelcomeMail = async (name, mail, message) => {
     }
 };
 
-export default userWelcomeMail;
+export default mailTemplateAction;
