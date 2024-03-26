@@ -30,13 +30,16 @@ import styles from './style.module.css';
 const text = `I'm`;
 const textTwo = `Let's Talk`;
 export default function Home() {
-  
+  const {
+    openInNewTab
+  } = useUtilities();
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+
   return (
     <>
       <DesktopNav />
       <MobileNav />
-      <section id='#home' className='h-full md:h-screen pt-20 bg-purple-700'>
+      <section id='#home' className='h-full lg:h-screen pt-20 bg-purple-700'>
       <main className="grid grid-cols-1 gap-4 lg:grid-cols-5 h-full font-mono">
         <div className='lg:col-span-3 justify-center px-3 lg:pl-10 lg:px-0'>
           <div className="mt-16 flex flex-row items-center">
@@ -67,7 +70,7 @@ export default function Home() {
             <button type='button' className='w-36 h-14 border-2 text-white text-xl border-purple-600 rounded-2xl bg-purple-600 hover:bg-transparent'>Hire Me</button>
             <button type='button' className='w-36 h-14 border-2 text-white text-xl border-purple-600 rounded-2xl hover:bg-purple-600'>{textTwo}</button>
           </div>
-          <div className='flex flex-col md:flex-row justify-between w-full md:w-4/5 gap-2 mt-5'>
+          <div className='flex flex-col md:flex-row justify-between w-full md:w-4/5 gap-2 mt-5 '>
             <div className='flex flex-row md:gap-8 w-full justify-around md:justify-start md:w-2/3 my-4 md:mt-0'>
               <Link href='/instagram' className=''>
                 <i className="text-blue-600 duration-200 text-4xl"><FaFacebook /></i>
@@ -110,6 +113,7 @@ export default function Home() {
       <FooterContainer />
         <div>
             <button 
+              onClick={()=>openInNewTab('http://Wa.me/2349014231777')}
               className='w-10 h-10 lg:w-12 lg:h-12 flex justify-center items-center text-xl bg-green-400 text-white bottom-7 lg:bottom-10 fixed right-2 lg:right-5 rounded-full z-5'
               type='button' 
             >
