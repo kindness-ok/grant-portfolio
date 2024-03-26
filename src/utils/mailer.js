@@ -1,13 +1,54 @@
 import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
-  host:  process.BREVO_HOST,
-  port:  process.BREVO_PORT,
+  host: process.env.NEXT_PUBLIC_BREVO_HOST,
+  port: process.env.NEXT_PUBLIC_BREVO_PORT,
   pool: true,
   auth: {
-    user:  process.env.BREVO_USER,
-    pass:  process.env.BREVO_PASSWORD,
+    user:  process.env.NEXT_PUBLIC_BREVO_USER,
+    pass:  process.env.NEXT_PUBLIC_BREVO_PASSWORD,
   },
 });
 
-export default transporter;
+
+const userWelcomeMail = async (name, mail, message) => {
+    const messageTemplate = `
+        <div>
+            <table align="center" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
+                        <table cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="color: #153643; font-family: Arial, sans-serif; font-size: 24px;">
+                                    <b>Hello, My name is ${name}</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 24px;">
+                                    ${message}
+                                </td>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    ` 
+    const mailOptions = {
+        from: process.env.BREVO_USER,
+        to: mail,
+        subject: "New Message From grant.com site!",
+        html: messageTemplate,
+        text: `Message from ${mail}...`,
+    }
+
+    try {
+        await transporter.sendMail(mailOptions)
+    } catch (error) {
+        throw {
+            name: "MailerError",
+            message: `Error sending mail: ${error}`
+        }
+    }
+};
+
+export default userWelcomeMail;

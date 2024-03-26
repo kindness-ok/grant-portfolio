@@ -52,7 +52,7 @@ export default function About () {
                 </div>
                 <div className="flex flex-row gap-3 items-center bg-transparent">
                   <GiGreenhouse className="text-purple-700 text-2xl" />
-                  <p className="text-xs font-mono font-bold ">418, Obafemi Awolowo Way, Ikeja Lagos.</p>
+                  <p onClick={()=>console.log(process.env.NEXT_PUBLIC_BREVO_USER, 'oo')} className="text-xs font-mono font-bold ">418, Obafemi Awolowo Way, Ikeja Lagos.</p>
                 </div>
               </div>
             </Fade>
