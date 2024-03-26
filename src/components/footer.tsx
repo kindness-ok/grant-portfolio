@@ -55,7 +55,7 @@ export default function FooterContainer() {
           </div>
           </Fade>
           <div className="my-10 flex flex-col justify-center items-center">
-            <p className="text-black flex items-center gap-2 text-sm md:text-base">Created and Licensed By{' '}
+            <p className="text-black flex items-center gap-2 text-xs md:text-base">Created and Licensed By{' '}
               <Link href='google.com'><span className="text-purple-700 hover:underline">Kindness Okpugie</span></Link>
               {' '} <span className="md:text-2xl"> © </span>2024
             </p>

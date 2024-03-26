@@ -89,7 +89,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="lg:col-span-2 h-full flex justify-center items-center md:rounded-l-[150px] bg-purple-600">
+        <div className="lg:col-span-2 h-full flex justify-center items-center lg:rounded-l-[150px] bg-purple-600">
           <div className="w-full h-5/6 flex items-center justify-center overflow-hidden " ref={emblaRef} >
             <div className='flex flex-row w-full h-full'>
                 <Image src={Man} alt='display' className='rounded-4xl mx-20 w-96 h-full object-cover' />
