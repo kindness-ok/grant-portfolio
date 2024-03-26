@@ -4,22 +4,31 @@ import { IoShieldCheckmarkSharp } from "react-icons/io5";
 import { FaTwitter, FaFacebook, FaYoutube, FaInstagramSquare } from "react-icons/fa";
 import Projectone from '../../../public/projectone.png';
 import { Fade } from "react-awesome-reveal";
+import toast, { Toaster } from 'react-hot-toast';
 import style from './style.module.css'
 
-
 export default function FooterContainer() {
+  const notify = () => toast.loading("Sending Message");
+
   return (
 		  <footer className="mt-16 font-mono text-black px-2 flex flex-col">
-        <section id='contact'>
+        <section id='contact'>                    
+          <Toaster
+            position="top-center"
+            reverseOrder={false}
+          />
           <div className="w-full flex flex-row justify-center items-center mb-20">
             <h2 className="text-black text-4xl font-mono font-bold relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-2 after:bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 after:h-1 after:w-full after:rounded-xl after:duration-300">
               Contact
             </h2>
           </div>
           <div className="my-7 w-full">
-            <form action={()=> console.log('form')}>
+            <form action={()=>notify()}>
               <Fade>
               <div className="w-full flex flex-col justify-center items-center gap-2">
+                <div className="w-full lg:w-4/6 ">
+                  <p className="text-red-600">Error occured when sending the mail</p>
+                </div>
                 <div className="w-full grid-cols-1 lg:w-4/6 grid md:grid-cols-2 gap-2">
                   <div className="col-span-1">
                     <input placeholder="Name" type='text' required={true} className={style.inputText} />
