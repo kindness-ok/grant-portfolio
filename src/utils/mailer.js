@@ -39,10 +39,10 @@ const userWelcomeMail = async (name, mail, message) => {
         subject: "New Message From grant.com site!",
         html: messageTemplate,
         text: `Message from ${mail}...`,
-    }
+    };
 
     try {
-        await transporter.sendMail(mailOptions)
+        await transporter.sendMail(mailOptions);
     } catch (error) {
         throw {
             name: "MailerError",
