@@ -24,6 +24,7 @@ import ImageGallery from "@/components/imageGallery";
 import About from '@/components/about';
 import Services from '@/components/service';
 import FooterContainer from '@/components/footer';
+import useUtilities from '@/utils/index';
 import styles from './style.module.css';
 
 const text = `I'm`;
@@ -109,11 +110,11 @@ export default function Home() {
       <FooterContainer />
         <div>
             <button 
-              className='w-10 h-10 flex justify-center items-center text-xl bg-green-400 text-white bottom-7 lg:bottom-10 fixed right-2 lg:right-5 rounded-full z-5'
+              className='w-10 h-10 lg:w-12 lg:h-12 flex justify-center items-center text-xl bg-green-400 text-white bottom-7 lg:bottom-10 fixed right-2 lg:right-5 rounded-full z-5'
               type='button' 
             >
               <FaWhatsapp 
-                className="text-2xl"
+                className="text-2xl lg:text-3xl"
               />
             </button>
         </div>
