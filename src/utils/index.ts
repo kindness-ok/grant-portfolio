@@ -1,14 +1,14 @@
 import { useState } from 'react';
 
 const useUtilities = () => {
-  const [emailText, setEmailText] = useState('');
-  const [nameText, setNameText] = useState('');
-  const [messageText, setMessageText] = useState('');
+  const [emailText, setEmailText] = useState<string>('');
+  const [nameText, setNameText] = useState<string>('');
+  const [messageText, setMessageText] = useState<string>('');
 
-  const handleNameChange = (e: Event) => {
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setNameText(e.target.value);
   };
-  const handleEmailChange = (e: Event) => {
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmailText(e.target.value);
   };
   const handleMessageChange = (e: React.ChangeEvent<HTMLInputElement>) => {

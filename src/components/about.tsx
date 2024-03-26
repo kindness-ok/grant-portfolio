@@ -6,7 +6,7 @@ import { FcCellPhone } from "react-icons/fc";
 import Grant from "../../public/grant.jpg";
 import { FcGlobe } from "react-icons/fc";
 import { Fade } from "react-awesome-reveal";
-
+import useUtilities from '@/utils/index';
 export default function About () {
   return (
     <> 
