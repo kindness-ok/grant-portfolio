@@ -11,7 +11,7 @@ import { IoMenuOutline, IoCloseSharp } from "react-icons/io5";
 import Menu from "../../public/menu.svg";
 
 export default function MobileNav() {
-  const sidebarRef = useRef<HTMLDivElement>();
+  const sidebarRef = useRef<HTMLButtonElement | null>(null);
   const [isToggle, setToggle] = useState<boolean>(false);
   const switchToggle = () => setToggle(!isToggle);
   const handleClickOutside = (e: any) => {
@@ -48,12 +48,12 @@ export default function MobileNav() {
         <button type="button" ref={sidebarRef} className=" transition-all duration-400 ease-in-out">
           {
             isToggle 
-            ? <IoCloseSharp className="text-4xl text-yellow-200" />
+            ? <IoCloseSharp onClick={switchToggle} className="text-4xl text-yellow-200" />
             : <IoMenuOutline onClick={switchToggle} className="text-4xl text-yellow-200" />
           }
         </button>
       </ul>
-      <div ref={sidebarRef} className={`z-10 bg-purple-700 fixed top-0 h-full w-3/4 transition-all duration-700 ease-in-out overflow-auto ${isToggle ?  "left-0" : "-left-3/4" }`}>
+      <div className={`z-10 bg-purple-700 fixed top-0 h-full w-3/4 transition-all duration-700 ease-in-out overflow-auto ${isToggle ?  "left-0" : "-left-3/4" }`}>
         <ul className="mt-5 flex flex-col gap-4">
           <div className="flex flex-col gap-1 text-white justify-center mb-8 items-center">
             <Image

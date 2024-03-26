@@ -6,8 +6,11 @@ import { FcCellPhone } from "react-icons/fc";
 import Grant from "../../public/grant.jpg";
 import { FcGlobe } from "react-icons/fc";
 import { Fade } from "react-awesome-reveal";
-
+import useUtilities from '@/utils/index';
 export default function About () {
+  const {
+    openInNewTab
+  } = useUtilities();
   return (
     <> 
       <div className="my-10">
@@ -37,15 +40,19 @@ export default function About () {
                 </div>
                 <div className="flex flex-row gap-3 items-center">
                   <FcCellPhone className="text-purple-700 text-2xl" />
-                  <p className="text-xs font-mono font-bold hover:underline">+2349014231777</p>
+                  <p onClick={()=>openInNewTab('http://Wa.me/2349014231777')} className="text-xs font-mono font-bold hover:underline">
+                    +2349014231777
+                  </p>
                 </div>
                 <div className="flex flex-row gap-3 items-center">
                   <RxEnvelopeClosed className="text-purple-700 text-2xl" />
-                  <p className="text-xs font-mono font-bold hover:underline">gredgwaint@gmail.com</p>
+                  <p onClick={()=>openInNewTab('mailto:gredgwaint@gmail.com')} className="text-xs font-mono font-bold hover:underline">
+                    gredgwaint@gmail.com
+                  </p>
                 </div>
                 <div className="flex flex-row gap-3 items-center bg-transparent">
                   <GiGreenhouse className="text-purple-700 text-2xl" />
-                  <p className="text-xs font-mono font-bold ">418, Obafemi Awolowo Way, Ikeja Lagos.</p>
+                  <p onClick={()=>console.log(process.env.NEXT_PUBLIC_BREVO_USER, 'oo')} className="text-xs font-mono font-bold ">418, Obafemi Awolowo Way, Ikeja Lagos.</p>
                 </div>
               </div>
             </Fade>

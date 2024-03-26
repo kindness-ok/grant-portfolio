@@ -19,7 +19,7 @@ export default function DesktopNav() {
           height={60}
           className="contrast-100 mix-blend-multiply filter-1"
         /> */}
-      <span className="text-2xl text-white">
+      <span className="text-2xl bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text">
         Grant Clothing
       </span>
       </div>
