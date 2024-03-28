@@ -3,9 +3,7 @@
 import React, { useState, useEffect} from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import Video from "next-video";
-import { motion } from "framer-motion";
-import { FaTwitter, FaFacebook, FaYoutube, FaInstagramSquare } from "react-icons/fa";
+import { FaTwitter, FaFacebook } from "react-icons/fa";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa6";
 import { Typewriter } from 'react-simple-typewriter'
 import MobileNav from '../components/mobilenav';

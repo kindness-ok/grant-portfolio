@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Resend } from 'resend';
-import mailTemplateAction from './mailer';
-import { toast } from './toast';
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESET_APIKEY as string);
 
