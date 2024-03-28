@@ -11,12 +11,24 @@ import style from './style.module.css'
 
 export default function FooterContainer() {
   const [state, handleSubmit] = useForm("mayrperq");
-  const notify = () =>  {
-    toast.success("Sending Message");
-  }
+  const myPromise: any = handleSubmit;
+  const sendMailAction = async () => {
+    toast.promise(myPromise, {
+      loading: 'Loading',
+      success: (data) => `Successfully saved ${data}`,
+      error: (err) => `This just happened: ${err.toString()}`,
+    }, {
+      style: {
+        minWidth: '250px',
+      },
+      success: {
+        duration: 5000,
+        icon: '🔥',
+      },
+    });
+  };
   const {
     error,
-    sendMailAction,
     nameText,
     emailText,
     messageText,
@@ -38,7 +50,7 @@ export default function FooterContainer() {
             </h2>
           </div>
           <div className="my-7 w-full">
-            <form action={handleSubmit}>
+            <form action={sendMailAction}>
               <Fade>
               <div className="w-full flex flex-col justify-center items-center gap-2">
                 <div className="w-full lg:w-4/6 ">
