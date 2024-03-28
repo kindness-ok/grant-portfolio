@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
+    "@formspree/react": "^2.5.1",
     "email-js": "^2.0.2",
     "embla-carousel-autoplay": "^8.0.0",
     "embla-carousel-react": "^8.0.0",
