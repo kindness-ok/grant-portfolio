@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
 import { FaTwitter, FaFacebook, FaYoutube, FaInstagramSquare } from "react-icons/fa";
@@ -27,7 +27,6 @@ interface handleServerResponseProp {
 export default function FooterContainer() {
   const [error, setError] = useState<string>('');
   const [state, handleSubmit] = useForm("mayrperq");
-
   const {
     nameText,
     emailText,
@@ -36,6 +35,18 @@ export default function FooterContainer() {
     handleEmailChange,
     handleMessageChange,
   } = useUtilities();
+
+  useEffect(() => {
+    // Event listener logic
+    if (state.submitting) {
+      toast.loading('Sending Message...');
+    };
+    if (state.succeeded) {
+      toast.dismiss();
+      toast.success('Message Sent Successfully');
+    };
+  }, [state]);
+
 
   return (
 		  <footer className="mt-16 font-mono text-black px-2 flex flex-col">
