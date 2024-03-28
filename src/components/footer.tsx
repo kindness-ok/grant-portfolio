@@ -57,6 +57,8 @@ export default function FooterContainer() {
                     <input 
                       placeholder="Email" 
                       type='email' 
+                      id="email"
+                      name="email"
                       required={true} 
                       className={style.inputText} 
                       value={emailText}
@@ -67,6 +69,8 @@ export default function FooterContainer() {
                 <div className="w-full lg:w-4/6">
                   <textarea 
                     placeholder="Message..." 
+                    id="message"
+                    name="message"
                     required={true} 
                     className={style.textArea}
                     value={messageText}
