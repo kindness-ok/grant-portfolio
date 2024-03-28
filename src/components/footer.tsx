@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useForm, ValidationError } from '@formspree/react';
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
 import { FaTwitter, FaFacebook, FaYoutube, FaInstagramSquare } from "react-icons/fa";
 import Projectone from '../../../public/projectone.png';
@@ -9,6 +10,7 @@ import useUtilities from '@/utils/index';
 import style from './style.module.css'
 
 export default function FooterContainer() {
+  const [state, handleSubmit] = useForm("mayrperq");
   const notify = () =>  {
     toast.success("Sending Message");
   }
@@ -36,7 +38,7 @@ export default function FooterContainer() {
             </h2>
           </div>
           <div className="my-7 w-full">
-            <form action={sendMailAction}>
+            <form action={handleSubmit}>
               <Fade>
               <div className="w-full flex flex-col justify-center items-center gap-2">
                 <div className="w-full lg:w-4/6 ">
@@ -51,6 +53,11 @@ export default function FooterContainer() {
                       className={style.inputText}
                       value={nameText}
                       onChange={handleNameChange}
+                    />
+                    <ValidationError 
+                      prefix="Email" 
+                      field="email"
+                      errors={state.errors}
                     />
                   </div>
                   <div className="col-span-1">
@@ -77,9 +84,14 @@ export default function FooterContainer() {
                     onChange={handleMessageChange}
                   >
                   </textarea>
+                  <ValidationError 
+                  prefix="Message" 
+                  field="message"
+                  errors={state.errors}
+                  />
                 </div>
                 <div className="">
-                  <button type="submit" className="w-40 h-10 text-white bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">Send</button>
+                  <button type="submit" disabled={state.submitting} className="w-40 h-10 text-white bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">Send</button>
                 </div>
               </div>
               </Fade>
