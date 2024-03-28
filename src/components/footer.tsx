@@ -7,17 +7,27 @@ import { FaTwitter, FaFacebook, FaYoutube, FaInstagramSquare } from "react-icons
 import Projectone from '../../../public/projectone.png';
 import { Fade } from "react-awesome-reveal";
 import { Toaster, toast } from '@/utils/toast';
+import axios from 'axios';
 import useUtilities from '@/utils/index';
 import style from './style.module.css'
+
+type serverResponseProps = {
+  submitting: boolean;
+  status: {
+    ok: boolean;
+    msg: string;
+  }
+}
+interface handleServerResponseProp {
+  ok: boolean;
+  msg: string;
+  form: HTMLFormElement;
+}
 
 export default function FooterContainer() {
   const [error, setError] = useState<string>('');
   const [state, handleSubmit] = useForm("mayrperq");
-  const runIt = async () => {
-    const res = await handleSubmit;
-    if (state.succeeded) setError('Message sent successfully');
-    setError('An error Occured');
-  }
+
   const {
     nameText,
     emailText,
@@ -40,11 +50,15 @@ export default function FooterContainer() {
             </h2>
           </div>
           <div className="my-7 w-full">
-            <form action={runIt}>
+            <form action={handleSubmit}>
               <Fade>
               <div className="w-full flex flex-col justify-center items-center gap-2">
                 <div className="w-full lg:w-4/6 ">
-                  <p className="text-red-600">{error}</p>
+                  {
+                    state.succeeded
+                    ? <p className="text-black">Message Sent Succesfully</p>
+                    : <p className="text-black-600"></p>
+                  }
                 </div>
                 <div className="w-full grid-cols-1 lg:w-4/6 grid md:grid-cols-2 gap-2">
                   <div className="col-span-1">
@@ -93,7 +107,9 @@ export default function FooterContainer() {
                   />
                 </div>
                 <div className="">
-                  <button type="submit" disabled={state.submitting} className="w-40 h-10 text-white bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">Send</button>
+                  <button type="submit" disabled={state.submitting} className="w-40 h-10 text-white bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">
+                    Send
+                  </button>
                 </div>
               </div>
               </Fade>
