@@ -50,7 +50,7 @@ export default function Home() {
               </span>
             </h1>
           </div>
-          <div className='my-5 flex flex-row items-center'>
+          <div className='my-5 flex flex-row items-center text-white'>
             <h1 className="text-xl md:text-4xl text-white font-bold">
               Discover True Personalization<br></br>For Your Path To<br></br>
               <span className='bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text text-2xl md:text-5xl'>

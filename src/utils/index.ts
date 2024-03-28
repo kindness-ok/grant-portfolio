@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Resend } from 'resend';
 import mailTemplateAction from './mailer';
-import emailjs from '@emailjs/browser';
 import { toast } from './toast';
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESET_APIKEY as string);
@@ -31,7 +30,6 @@ const useUtilities = () => {
   };
   const sendMail = async () => {
     console.log(process.env.NEXT_PUBLIC_RESET_APIKEY as string);
-    await emailjs.send
     const res = await resend.emails.send({
       from: 'kindnessokpugie5@gmail.com',
       to: 'kindnessokpugie5@gmail.com',
