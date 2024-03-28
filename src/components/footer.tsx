@@ -25,8 +25,7 @@ interface handleServerResponseProp {
 }
 
 export default function FooterContainer() {
-  const [error, setError] = useState<string>('');
-  const [state, handleSubmit] = useForm("mayrperq");
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMSPREE as string);
   const {
     nameText,
     emailText,
@@ -38,9 +37,6 @@ export default function FooterContainer() {
 
   useEffect(() => {
     // Event listener logic
-    if (state.submitting) {
-      toast.loading('Sending Message...');
-    };
     if (state.succeeded) {
       toast.dismiss();
       toast.success('Message Sent Successfully');

@@ -28,7 +28,7 @@ const useUtilities = () => {
   const openInNewTab = (url: string) => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
-  const sendMail = async () => {
+  /* const sendMail = async () => {
     console.log(process.env.NEXT_PUBLIC_RESET_APIKEY as string);
     const res = await resend.emails.send({
       from: 'kindnessokpugie5@gmail.com',
@@ -38,7 +38,7 @@ const useUtilities = () => {
     });
     console.log(res, 'resssss send mail service');
     return res;
-  };
+  }; 
   const sendMailAction = async () => {
     toast.promise(sendMail(), {
       loading: 'Loading',
@@ -53,7 +53,7 @@ const useUtilities = () => {
         icon: '🔥',
       },
     });
-  };
+  }; /
   /* const sendMail = async (nameText: string, emailText: string, messageText: string) => {
     if (!nameText || !emailText || !messageText) return setError('Fill All Fields.');
     const res = await mailTemplateAction(nameText, emailText, messageText);
@@ -68,7 +68,6 @@ const useUtilities = () => {
     handleEmailChange,
     handleMessageChange,
     openInNewTab,
-    sendMailAction,
   }
 };
 
