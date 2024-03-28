@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
 import { FaTwitter, FaFacebook, FaYoutube, FaInstagramSquare } from "react-icons/fa";
@@ -10,25 +11,14 @@ import useUtilities from '@/utils/index';
 import style from './style.module.css'
 
 export default function FooterContainer() {
+  const [error, setError] = useState<string>('');
   const [state, handleSubmit] = useForm("mayrperq");
-  const myPromise: any = handleSubmit;
-  const sendMailAction = async () => {
-    toast.promise(myPromise, {
-      loading: 'Loading',
-      success: (data) => `Successfully saved ${data}`,
-      error: (err) => `This just happened: ${err.toString()}`,
-    }, {
-      style: {
-        minWidth: '250px',
-      },
-      success: {
-        duration: 5000,
-        icon: '🔥',
-      },
-    });
-  };
+  const runIt = async () => {
+    const res = await handleSubmit;
+    if (state.succeeded) setError('Message sent successfully');
+    setError('An error Occured');
+  }
   const {
-    error,
     nameText,
     emailText,
     messageText,
@@ -50,11 +40,11 @@ export default function FooterContainer() {
             </h2>
           </div>
           <div className="my-7 w-full">
-            <form action={sendMailAction}>
+            <form action={runIt}>
               <Fade>
               <div className="w-full flex flex-col justify-center items-center gap-2">
                 <div className="w-full lg:w-4/6 ">
-                  <p className="text-red-600">{!!error && error}</p>
+                  <p className="text-red-600">{error}</p>
                 </div>
                 <div className="w-full grid-cols-1 lg:w-4/6 grid md:grid-cols-2 gap-2">
                   <div className="col-span-1">
