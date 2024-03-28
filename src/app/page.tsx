@@ -3,9 +3,7 @@
 import React, { useState, useEffect} from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import Video from "next-video";
-import { motion } from "framer-motion";
-import { FaTwitter, FaFacebook, FaYoutube, FaInstagramSquare } from "react-icons/fa";
+import { FaTwitter, FaFacebook } from "react-icons/fa";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa6";
 import { Typewriter } from 'react-simple-typewriter'
 import MobileNav from '../components/mobilenav';
@@ -50,7 +48,7 @@ export default function Home() {
               </span>
             </h1>
           </div>
-          <div className='my-5 flex flex-row items-center'>
+          <div className='my-5 flex flex-row items-center text-white'>
             <h1 className="text-xl md:text-4xl text-white font-bold">
               Discover True Personalization<br></br>For Your Path To<br></br>
               <span className='bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text text-2xl md:text-5xl'>
