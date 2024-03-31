@@ -5,8 +5,8 @@ import { Fade } from "react-awesome-reveal";
 export default function ImageGallery () {
   return (
     <>
-      <div className="grid w-full grid-cols-2 md:grid-cols-4 gap-4 px-3">
-        <div className="grid gap-4">
+      <div className="grid w-full grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 px-2 md:px-3">
+        <div className="grid gap-2 md:gap-4">
           <div>
             <Fade direction="up" duration={1000} delay={200} triggerOnce>
               <Image sizes="100vw" width={0} height={0} style={{ width: '100%', height: 'auto' }} className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="imagegrid"/>
@@ -23,7 +23,7 @@ export default function ImageGallery () {
             </Fade>
           </div>
         </div>
-        <div className="grid gap-4">
+        <div className="grid gap-2 md:gap-4">
           <div>
             <Fade direction="up" duration={1000} delay={200} triggerOnce>
               <Image sizes="100vw" width={0} height={0} style={{ width: '100%', height: 'auto' }} className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="imagegrid"/>
@@ -40,7 +40,7 @@ export default function ImageGallery () {
             </Fade>
           </div>
         </div>
-        <div className="grid gap-4">
+        <div className="grid gap-2 md:gap-4">
           <div>
             <Fade direction="up" duration={1000} delay={200} triggerOnce>
               <Image sizes="100vw" width={0} height={0} style={{ width: '100%', height: 'auto' }} className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="imagegrid"/>
@@ -57,7 +57,7 @@ export default function ImageGallery () {
             </Fade>
           </div>
         </div>
-        <div className="grid gap-4">
+        <div className="grid gap-2 md:gap-4">
           <div>
             <Fade direction="up" duration={1000} delay={200} triggerOnce>
               <Image sizes="100vw" width={0} height={0} style={{ width: '100%', height: 'auto' }} className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="imagegrid"/>

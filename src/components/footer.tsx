@@ -43,7 +43,6 @@ export default function FooterContainer() {
     };
   }, [state]);
 
-
   return (
 		  <footer className="mt-16 font-mono text-black px-2 flex flex-col">
         <section id='contact'>                    
@@ -71,20 +70,20 @@ export default function FooterContainer() {
                   <div className="col-span-1">
                     <input 
                       placeholder="Name" 
-                      type='text' 
-                      required={true} 
+                      type='text'
+                      required={true}
                       className={style.inputText}
                       value={nameText}
                       onChange={handleNameChange}
                     />
-                    <ValidationError 
+                    <ValidationError
                       prefix="Email" 
                       field="email"
                       errors={state.errors}
                     />
                   </div>
                   <div className="col-span-1">
-                    <input 
+                    <input
                       placeholder="Email" 
                       type='email' 
                       id="email"
@@ -97,17 +96,17 @@ export default function FooterContainer() {
                   </div>
                 </div>
                 <div className="w-full lg:w-4/6">
-                  <textarea 
-                    placeholder="Message..." 
+                  <textarea
+                    placeholder="Message..."
                     id="message"
                     name="message"
-                    required={true} 
+                    required={true}
                     className={style.textArea}
                     value={messageText}
                     onChange={handleMessageChange}
                   >
                   </textarea>
-                  <ValidationError 
+                  <ValidationError
                   prefix="Message" 
                   field="message"
                   errors={state.errors}

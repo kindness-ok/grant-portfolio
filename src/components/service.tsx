@@ -107,7 +107,7 @@ export default function Services () {
       <div className='w-full my-16 font-mono'>
         <div className='w-full flex flex-col justify-center items-center'>
           <Fade>
-          <h1 className={styles.headerTwo}>
+          <h1 className='text-black text-xl md:text-3xl font-bold'>
             Why Need My Services?
           </h1>
           </Fade>
