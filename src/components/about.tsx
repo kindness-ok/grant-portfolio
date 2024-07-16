@@ -73,8 +73,7 @@ export default function About () {
               </div>
               <div className="">
                 <p className="text-gray-500 font-medium font-mono">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Suspendisse varius enim in eros elementum tristique.
+                  The following below are the professional skills i have learnt along the way:
                 </p>
               </div>
               <div className="flex flex-col w-full my-2 gap-2">
