@@ -89,8 +89,8 @@ export default function Services () {
             </div>
             <div className="mb-5">   
               <p className="text-slate-500 font-mono font-bold">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Suspendisse varius enim in eros elementum tristique.
+                I will create a piece that flatters 
+                your figure and makes you feel confident and comfortable.
               </p>
             </div>
           </div>
