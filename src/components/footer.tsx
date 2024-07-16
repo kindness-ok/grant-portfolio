@@ -50,10 +50,11 @@ export default function FooterContainer() {
             position="top-center"
             reverseOrder={false}
           />
-          <div className="w-full flex flex-row justify-center items-center mb-20">
+          <div className="w-full flex flex-col justify-center items-center mb-20 gap-3">
             <h2 className="text-black text-4xl font-mono font-bold relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-2 after:bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 after:h-1 after:w-full after:rounded-xl after:duration-300">
               Contact
             </h2>
+            <p className="text-slate-800 text-base">Send me a Message</p>
           </div>
           <div className="my-7 w-full">
             <form action={handleSubmit}>
