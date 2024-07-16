@@ -37,8 +37,7 @@ export default function Services () {
             </div>
             <div className="mb-5">   
               <p className="text-slate-500 font-mono font-bold">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Suspendisse varius enim in eros elementum tristique.
+                {`I'll`} carefully join pieces of fabric together to achieve the desired fit and style.
               </p>
             </div>
           </div>
@@ -64,8 +63,7 @@ export default function Services () {
             </div>
             <div className="mb-5">   
               <p className="text-slate-500 font-mono font-bold">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Suspendisse varius enim in eros elementum tristique.
+                {`I'll`} take your precise measurements to understand your body shape.
               </p>
             </div>
           </div>
