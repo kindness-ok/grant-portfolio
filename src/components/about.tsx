@@ -79,15 +79,6 @@ export default function About () {
               <div className="flex flex-col w-full my-2 gap-2">
                 <div className="flex flex-col w-full">
                   <div className="flex flex-row justify-between">
-                    <p>Crocheting</p>
-                    <p>90%</p>
-                  </div>
-                  <div className="w-full h-4 bg-slate-400 rounded-xl">
-                    <div className="w-[90%] h-4 bg-purple-700 rounded-xl"></div>
-                  </div>
-                </div>
-                <div className="flex flex-col w-full">
-                  <div className="flex flex-row justify-between">
                     <p>Measuring</p>
                     <p>95%</p>
                   </div>
@@ -97,7 +88,7 @@ export default function About () {
                 </div>
                 <div className="flex flex-col w-full">
                   <div className="flex flex-row justify-between">
-                    <p>Braiding</p>
+                    <p>Pattern Making</p>
                     <p>75%</p>
                   </div>
                   <div className="w-full h-4 bg-slate-400 rounded-xl">
@@ -106,16 +97,7 @@ export default function About () {
                 </div>
                 <div className="flex flex-col w-full">
                   <div className="flex flex-row justify-between">
-                    <p>Measuring</p>
-                    <p>95%</p>
-                  </div>
-                  <div className="w-full h-4 bg-slate-400 rounded-xl">
-                    <div className="w-[95%] h-4 bg-purple-700 rounded-xl"></div>
-                  </div>
-                </div>
-                <div className="flex flex-col w-full">
-                  <div className="flex flex-row justify-between">
-                    <p>Braiding</p>
+                    <p>Pattern Drafting</p>
                     <p>75%</p>
                   </div>
                   <div className="w-full h-4 bg-slate-400 rounded-xl">
@@ -124,11 +106,20 @@ export default function About () {
                 </div>
                 <div className="flex flex-col w-full">
                   <div className="flex flex-row justify-between">
-                    <p>Braiding</p>
+                    <p>Fabric Cutting</p>
                     <p>75%</p>
                   </div>
                   <div className="w-full h-4 bg-slate-400 rounded-xl">
                     <div className="w-[75%] h-4 bg-purple-700 rounded-xl"></div>
+                  </div>
+                </div>
+                <div className="flex flex-col w-full">
+                  <div className="flex flex-row justify-between">
+                    <p>Threading Machines</p>
+                    <p>85%</p>
+                  </div>
+                  <div className="w-full h-4 bg-slate-400 rounded-xl">
+                    <div className="w-[85%] h-4 bg-purple-700 rounded-xl"></div>
                   </div>
                 </div>
               </div>
