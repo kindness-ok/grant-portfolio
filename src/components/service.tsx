@@ -113,8 +113,8 @@ export default function Services () {
         <div className='w-full flex flex-col justify-center items-center'>
           <Fade>
           <p className={styles.paragrahpTwo}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br>
-            Suspendisse varius enim in eros.
+            Discover the art of tailoring through a selection of past projects.<br></br>
+            Check it out.
           </p>
           </Fade>
         </div>
