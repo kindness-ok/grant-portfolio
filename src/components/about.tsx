@@ -27,10 +27,14 @@ export default function About () {
               </div>
               <div className="">
                 <p className="text-gray-500 font-medium font-mono">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Suspendisse varius enim in eros elementum tristique.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Suspendisse varius enim in eros elementum tristique.
+                  My name is <span className="text-purple-600">Grant Gwawoh</span>, 
+                  and i have been weaving magic with fabric for 4 years in the heart 
+                  of Lagos, Nigeria. My journey as a tailor began with a personal desire
+                  to look and feel their best. <br></br>
+                  {' '} This passion for <span className="text-purple-600">self-expression </span> 
+                  through clothing has evolved me to desire to create similar experiences for others. 
+                  This passion has blossomed into a  dedication to crafting not just clothes, but 
+                  <span className="text-purple-600">confidence and style</span> for my clients.
                 </p>
               </div>
               <div className="flex flex-col w-full my-2 gap-1">
