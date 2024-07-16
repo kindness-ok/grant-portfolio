@@ -27,10 +27,14 @@ export default function About () {
               </div>
               <div className="">
                 <p className="text-gray-500 font-medium font-mono">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Suspendisse varius enim in eros elementum tristique.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Suspendisse varius enim in eros elementum tristique.
+                  My name is <span className="text-purple-600">Grant Gwawoh</span>, 
+                  and i have been weaving magic with fabric for 4 years in the heart 
+                  of Lagos, Nigeria. My journey as a tailor began with a personal desire
+                  to look and feel their best. <br></br>
+                  {' '} This passion for <span className="text-purple-600">self-expression </span> 
+                  through clothing has evolved me to desire to create similar experiences for others. 
+                  This passion has blossomed into a  dedication to crafting not just clothes, but 
+                  <span className="text-purple-600"> confidence and style</span> for my clients.
                 </p>
               </div>
               <div className="flex flex-col w-full my-2 gap-1">
@@ -73,14 +77,22 @@ export default function About () {
               </div>
               <div className="">
                 <p className="text-gray-500 font-medium font-mono">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Suspendisse varius enim in eros elementum tristique.
+                  The following below are the professional skills i have learnt along the way:
                 </p>
               </div>
               <div className="flex flex-col w-full my-2 gap-2">
                 <div className="flex flex-col w-full">
                   <div className="flex flex-row justify-between">
-                    <p>Crocheting</p>
+                    <p>Measuring</p>
+                    <p>95%</p>
+                  </div>
+                  <div className="w-full h-4 bg-slate-400 rounded-xl">
+                    <div className="w-[95%] h-4 bg-purple-700 rounded-xl"></div>
+                  </div>
+                </div>
+                <div className="flex flex-col w-full">
+                  <div className="flex flex-row justify-between">
+                    <p>Pattern Making</p>
                     <p>90%</p>
                   </div>
                   <div className="w-full h-4 bg-slate-400 rounded-xl">
@@ -89,47 +101,29 @@ export default function About () {
                 </div>
                 <div className="flex flex-col w-full">
                   <div className="flex flex-row justify-between">
-                    <p>Measuring</p>
+                    <p>Pattern Drafting</p>
+                    <p>85%</p>
+                  </div>
+                  <div className="w-full h-4 bg-slate-400 rounded-xl">
+                    <div className="w-[85%] h-4 bg-purple-700 rounded-xl"></div>
+                  </div>
+                </div>
+                <div className="flex flex-col w-full">
+                  <div className="flex flex-row justify-between">
+                    <p>Fabric Cutting</p>
+                    <p>90%</p>
+                  </div>
+                  <div className="w-full h-4 bg-slate-400 rounded-xl">
+                    <div className="w-[90%] h-4 bg-purple-700 rounded-xl"></div>
+                  </div>
+                </div>
+                <div className="flex flex-col w-full">
+                  <div className="flex flex-row justify-between">
+                    <p>Threading Machines</p>
                     <p>95%</p>
                   </div>
                   <div className="w-full h-4 bg-slate-400 rounded-xl">
                     <div className="w-[95%] h-4 bg-purple-700 rounded-xl"></div>
-                  </div>
-                </div>
-                <div className="flex flex-col w-full">
-                  <div className="flex flex-row justify-between">
-                    <p>Braiding</p>
-                    <p>75%</p>
-                  </div>
-                  <div className="w-full h-4 bg-slate-400 rounded-xl">
-                    <div className="w-[75%] h-4 bg-purple-700 rounded-xl"></div>
-                  </div>
-                </div>
-                <div className="flex flex-col w-full">
-                  <div className="flex flex-row justify-between">
-                    <p>Measuring</p>
-                    <p>95%</p>
-                  </div>
-                  <div className="w-full h-4 bg-slate-400 rounded-xl">
-                    <div className="w-[95%] h-4 bg-purple-700 rounded-xl"></div>
-                  </div>
-                </div>
-                <div className="flex flex-col w-full">
-                  <div className="flex flex-row justify-between">
-                    <p>Braiding</p>
-                    <p>75%</p>
-                  </div>
-                  <div className="w-full h-4 bg-slate-400 rounded-xl">
-                    <div className="w-[75%] h-4 bg-purple-700 rounded-xl"></div>
-                  </div>
-                </div>
-                <div className="flex flex-col w-full">
-                  <div className="flex flex-row justify-between">
-                    <p>Braiding</p>
-                    <p>75%</p>
-                  </div>
-                  <div className="w-full h-4 bg-slate-400 rounded-xl">
-                    <div className="w-[75%] h-4 bg-purple-700 rounded-xl"></div>
                   </div>
                 </div>
               </div>

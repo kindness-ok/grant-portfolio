@@ -43,7 +43,6 @@ export default function FooterContainer() {
     };
   }, [state]);
 
-
   return (
 		  <footer className="mt-16 font-mono text-black px-2 flex flex-col">
         <section id='contact'>                    
@@ -51,10 +50,11 @@ export default function FooterContainer() {
             position="top-center"
             reverseOrder={false}
           />
-          <div className="w-full flex flex-row justify-center items-center mb-20">
+          <div className="w-full flex flex-col justify-center items-center mb-20 gap-3">
             <h2 className="text-black text-4xl font-mono font-bold relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-2 after:bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 after:h-1 after:w-full after:rounded-xl after:duration-300">
               Contact
             </h2>
+            <p className="text-slate-800 text-base">Send me a Message</p>
           </div>
           <div className="my-7 w-full">
             <form action={handleSubmit}>
@@ -71,20 +71,20 @@ export default function FooterContainer() {
                   <div className="col-span-1">
                     <input 
                       placeholder="Name" 
-                      type='text' 
-                      required={true} 
+                      type='text'
+                      required={true}
                       className={style.inputText}
                       value={nameText}
                       onChange={handleNameChange}
                     />
-                    <ValidationError 
+                    <ValidationError
                       prefix="Email" 
                       field="email"
                       errors={state.errors}
                     />
                   </div>
                   <div className="col-span-1">
-                    <input 
+                    <input
                       placeholder="Email" 
                       type='email' 
                       id="email"
@@ -97,17 +97,17 @@ export default function FooterContainer() {
                   </div>
                 </div>
                 <div className="w-full lg:w-4/6">
-                  <textarea 
-                    placeholder="Message..." 
+                  <textarea
+                    placeholder="Message..."
                     id="message"
                     name="message"
-                    required={true} 
+                    required={true}
                     className={style.textArea}
                     value={messageText}
                     onChange={handleMessageChange}
                   >
                   </textarea>
-                  <ValidationError 
+                  <ValidationError
                   prefix="Message" 
                   field="message"
                   errors={state.errors}

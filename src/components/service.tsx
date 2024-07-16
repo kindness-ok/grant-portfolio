@@ -37,8 +37,7 @@ export default function Services () {
             </div>
             <div className="mb-5">   
               <p className="text-slate-500 font-mono font-bold">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Suspendisse varius enim in eros elementum tristique.
+                {`I'll`} carefully join pieces of fabric together to achieve the desired fit and style.
               </p>
             </div>
           </div>
@@ -64,8 +63,7 @@ export default function Services () {
             </div>
             <div className="mb-5">   
               <p className="text-slate-500 font-mono font-bold">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Suspendisse varius enim in eros elementum tristique.
+                {`I'll`} take your precise measurements to understand your body shape.
               </p>
             </div>
           </div>
@@ -91,8 +89,8 @@ export default function Services () {
             </div>
             <div className="mb-5">   
               <p className="text-slate-500 font-mono font-bold">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Suspendisse varius enim in eros elementum tristique.
+                I will create a piece that flatters 
+                your figure and makes you feel confident and comfortable.
               </p>
             </div>
           </div>
@@ -107,16 +105,16 @@ export default function Services () {
       <div className='w-full my-16 font-mono'>
         <div className='w-full flex flex-col justify-center items-center'>
           <Fade>
-          <h1 className={styles.headerTwo}>
+          <h1 className='text-black text-sm md:text-3xl font-bold'>
             Why Need My Services?
           </h1>
           </Fade>
         </div>
         <div className='w-full flex flex-col justify-center items-center'>
           <Fade>
-          <p className={styles.paragrahpTwo}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br>
-            Suspendisse varius enim in eros.
+          <p className='text-xs md:text-base text-slate-600 text-center'>
+            Discover the art of tailoring through a selection of past projects.<br></br>
+            Check it out.
           </p>
           </Fade>
         </div>
