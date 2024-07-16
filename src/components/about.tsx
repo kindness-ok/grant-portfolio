@@ -34,7 +34,7 @@ export default function About () {
                   {' '} This passion for <span className="text-purple-600">self-expression </span> 
                   through clothing has evolved me to desire to create similar experiences for others. 
                   This passion has blossomed into a  dedication to crafting not just clothes, but 
-                  <span className="text-purple-600">confidence and style</span> for my clients.
+                  <span className="text-purple-600"> confidence and style</span> for my clients.
                 </p>
               </div>
               <div className="flex flex-col w-full my-2 gap-1">
@@ -93,37 +93,37 @@ export default function About () {
                 <div className="flex flex-col w-full">
                   <div className="flex flex-row justify-between">
                     <p>Pattern Making</p>
-                    <p>75%</p>
+                    <p>90%</p>
                   </div>
                   <div className="w-full h-4 bg-slate-400 rounded-xl">
-                    <div className="w-[75%] h-4 bg-purple-700 rounded-xl"></div>
+                    <div className="w-[90%] h-4 bg-purple-700 rounded-xl"></div>
                   </div>
                 </div>
                 <div className="flex flex-col w-full">
                   <div className="flex flex-row justify-between">
                     <p>Pattern Drafting</p>
-                    <p>75%</p>
+                    <p>85%</p>
                   </div>
                   <div className="w-full h-4 bg-slate-400 rounded-xl">
-                    <div className="w-[75%] h-4 bg-purple-700 rounded-xl"></div>
+                    <div className="w-[85%] h-4 bg-purple-700 rounded-xl"></div>
                   </div>
                 </div>
                 <div className="flex flex-col w-full">
                   <div className="flex flex-row justify-between">
                     <p>Fabric Cutting</p>
-                    <p>75%</p>
+                    <p>90%</p>
                   </div>
                   <div className="w-full h-4 bg-slate-400 rounded-xl">
-                    <div className="w-[75%] h-4 bg-purple-700 rounded-xl"></div>
+                    <div className="w-[90%] h-4 bg-purple-700 rounded-xl"></div>
                   </div>
                 </div>
                 <div className="flex flex-col w-full">
                   <div className="flex flex-row justify-between">
                     <p>Threading Machines</p>
-                    <p>85%</p>
+                    <p>95%</p>
                   </div>
                   <div className="w-full h-4 bg-slate-400 rounded-xl">
-                    <div className="w-[85%] h-4 bg-purple-700 rounded-xl"></div>
+                    <div className="w-[95%] h-4 bg-purple-700 rounded-xl"></div>
                   </div>
                 </div>
               </div>
