@@ -105,14 +105,14 @@ export default function Services () {
       <div className='w-full my-16 font-mono'>
         <div className='w-full flex flex-col justify-center items-center'>
           <Fade>
-          <h1 className='text-black text-xl md:text-3xl font-bold'>
+          <h1 className='text-black text-sm md:text-3xl font-bold'>
             Why Need My Services?
           </h1>
           </Fade>
         </div>
         <div className='w-full flex flex-col justify-center items-center'>
           <Fade>
-          <p className={styles.paragrahpTwo}>
+          <p className='text-xs md:text-base text-slate-600 text-center'>
             Discover the art of tailoring through a selection of past projects.<br></br>
             Check it out.
           </p>
