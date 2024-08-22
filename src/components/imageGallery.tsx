@@ -13,6 +13,10 @@ import DesignNine from "../../public/gservice9.jpg";
 import DesignTen from "../../public/gservice10.jpg";
 import DesignEleven from "../../public/gservice11.jpg";
 import DesignTwelve from "../../public/gservice12.jpg";
+import DesignThirteen from "../../public/gservice13.jpg";
+import DesignFourteen from "../../public/gservice14.jpg";
+import DesignFifteen from "../../public/gservice15.jpg";
+import DesignSixteen from "../../public/gservice16.jpg";
 
 export default function ImageGallery () {
   return (
