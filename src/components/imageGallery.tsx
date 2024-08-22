@@ -35,7 +35,12 @@ export default function ImageGallery () {
           </div>
           <div>
             <Fade direction="up" duration={1000} delay={200} triggerOnce>
-            <Image sizes="100vw" width={0} height={0} style={{ width: '100%', height: 'auto' }} className="h-auto max-w-full rounded-lg" src={DesignThree} alt="imagegrid"/>
+              <Image sizes="100vw" width={0} height={0} style={{ width: '100%', height: 'auto' }} className="h-auto max-w-full rounded-lg" src={DesignThree} alt="imagegrid"/>
+            </Fade>
+          </div>
+          <div>
+            <Fade direction="up" duration={1000} delay={200} triggerOnce>
+              <Image sizes="100vw" width={0} height={0} style={{ width: '100%', height: 'auto' }} className="h-auto max-w-full rounded-lg" src={DesignThirteen} alt="imagegrid"/>
             </Fade>
           </div>
         </div>
@@ -53,6 +58,11 @@ export default function ImageGallery () {
           <div>
             <Fade direction="up" duration={1000} delay={200} triggerOnce>
               <Image sizes="100vw" width={0} height={0} style={{ width: '100%', height: 'auto' }} className="h-auto max-w-full rounded-lg" src={DesignSix} alt="imagegrid"/>
+            </Fade>
+          </div>  
+          <div>
+            <Fade direction="up" duration={1000} delay={200} triggerOnce>
+              <Image sizes="100vw" width={0} height={0} style={{ width: '100%', height: 'auto' }} className="h-auto max-w-full rounded-lg" src={DesignFourteen} alt="imagegrid"/>
             </Fade>
           </div>       
         </div>
@@ -72,6 +82,11 @@ export default function ImageGallery () {
               <Image sizes="100vw" width={0} height={0} style={{ width: '100%', height: 'auto' }} className="h-auto max-w-full rounded-lg" src={DesignNine} alt="imagegrid"/>
             </Fade>
           </div>
+          <div>
+            <Fade direction="up" duration={1000} delay={200} triggerOnce>
+              <Image sizes="100vw" width={0} height={0} style={{ width: '100%', height: 'auto' }} className="h-auto max-w-full rounded-lg" src={DesignFifteen} alt="imagegrid"/>
+            </Fade>
+          </div>  
         </div>
         <div className="grid gap-2 md:gap-4">
           <div>
@@ -89,6 +104,11 @@ export default function ImageGallery () {
               <Image sizes="100vw" width={0} height={0} style={{ width: '100%', height: 'auto' }} className="h-auto max-w-full rounded-lg" src={DesignTwelve} alt="imagegrid"/>
             </Fade>
           </div>
+          <div>
+            <Fade direction="up" duration={1000} delay={200} triggerOnce>
+              <Image sizes="100vw" width={0} height={0} style={{ width: '100%', height: 'auto' }} className="h-auto max-w-full rounded-lg" src={DesignSixteen} alt="imagegrid"/>
+            </Fade>
+          </div>  
         </div>
       </div>
     </>
