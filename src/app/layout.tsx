@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   description: "Licensed and Created by Kindness Okpugie",
 };
 
+// rootlayout
+
 export default function RootLayout({
   children,
 }: Readonly<{
