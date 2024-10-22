@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 // rootlayout
-
+// part two
 export default function RootLayout({
   children,
 }: Readonly<{
