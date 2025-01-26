@@ -7,6 +7,7 @@ import { FaTwitter, FaFacebook, FaYoutube, FaInstagramSquare } from "react-icons
 import Projectone from '../../../public/projectone.png';
 import { Fade } from "react-awesome-reveal";
 import { Toaster, toast } from '@/utils/toast';
+import { githubUrl } from "@/utils/constant";
 import axios from 'axios';
 import useUtilities from '@/utils/index';
 import style from './style.module.css'
@@ -30,6 +31,7 @@ export default function FooterContainer() {
     nameText,
     emailText,
     messageText,
+    openInNewTab,
     handleNameChange,
     handleEmailChange,
     handleMessageChange,
