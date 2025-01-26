@@ -7,6 +7,7 @@ import { FaTwitter, FaFacebook, FaYoutube, FaInstagramSquare } from "react-icons
 import Projectone from '../../../public/projectone.png';
 import { Fade } from "react-awesome-reveal";
 import { Toaster, toast } from '@/utils/toast';
+import { githubUrl } from "@/utils/constant";
 import axios from 'axios';
 import useUtilities from '@/utils/index';
 import style from './style.module.css'
@@ -30,6 +31,7 @@ export default function FooterContainer() {
     nameText,
     emailText,
     messageText,
+    openInNewTab,
     handleNameChange,
     handleEmailChange,
     handleMessageChange,
@@ -140,7 +142,7 @@ export default function FooterContainer() {
           </Fade>
           <div className="my-10 flex flex-col justify-center items-center">
             <p className="text-black flex items-center gap-2 text-xs md:text-base">Created and Licensed By{' '}
-              <Link href='google.com'><span className="text-purple-700 hover:underline">Kindness Okpugie</span></Link>
+              <Link href='#' onClick={()=> openInNewTab(githubUrl)}><span className="text-purple-700 hover:underline">Kindness Okpugie</span></Link>
               {' '} <span className="md:text-2xl"> © </span>2024
             </p>
           </div>
